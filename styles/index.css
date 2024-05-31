@@ -26,7 +26,7 @@ body {
 	}
 }
 #title {
-	margin: 40px;
+	margin: 50px;
 }
 a {
 	font-family: "Press Start 2P";
@@ -47,4 +47,7 @@ a:active{
     font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
+}
+#footer {
+	margin: 50px;
 }
