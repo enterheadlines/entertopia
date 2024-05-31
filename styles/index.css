@@ -8,7 +8,10 @@ body {
 	margin: 0px;
 }
 #navshi {
-	padding: 0px;
+	margin: 0px;
+	border: 1px;
+	border-color: black;
+	padding: 5px;
 	background-color: rgb(0, 0, 0);
 }
 @keyframes gradient {
@@ -23,8 +26,9 @@ body {
 	}
 }
 #title {
-	text-align: center;
-	vertical-align: middle;
+	justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 a {
 	font-family: "Press Start 2P";
