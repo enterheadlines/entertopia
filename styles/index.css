@@ -1,13 +1,15 @@
 body {
-	background: linear-gradient(-45deg, #684337, #664451, #7fb2c5, #23d5ab);
+	background: linear-gradient(-45deg, #423f3e, #666062, #5a5e5f, #8b9391);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
     color: white;
-    font-family: sans-serif;
+    font-family: "Press Start 2P";
+	margin: 0px;
 }
 #navshi {
-	background-color: white;
+	margin: 5px;
+	background-color: rgb(0, 0, 0);
 }
 @keyframes gradient {
 	0% {
@@ -23,6 +25,23 @@ body {
 #title {
 	text-align: center;
 }
-hr {
-	
+a {
+	font-family: "Press Start 2P";
+	text-decoration: none;
+	color: white;
+}
+a:visited{
+	font-family: "Press Start 2P";
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	font-family: "Press Start 2P";
+	text-decoration: none;
+	color: white;
+}
+a:active{
+    font-family: "Press Start 2P";
+	text-decoration: none;
+	color: white;
 }
