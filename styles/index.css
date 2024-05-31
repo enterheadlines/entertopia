@@ -11,7 +11,7 @@ body {
 	margin: 0px;
 	border: 1px;
 	border-color: black;
-	padding: 5px;
+	padding: 10px;
 	background-color: rgb(0, 0, 0);
 }
 @keyframes gradient {
@@ -26,9 +26,7 @@ body {
 	}
 }
 #title {
-	justify-content: center;
-    align-items: center;
-    align-content: center;
+	margin: 60px;
 }
 a {
 	font-family: "Press Start 2P";
