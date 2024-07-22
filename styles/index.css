@@ -15,7 +15,7 @@ body {
 	border-color: black;
 	padding: 20px;
 	background-color: rgb(0, 0, 0);
-    position: fixed;
+   
 }
 @keyframes gradient {
 	0% {
