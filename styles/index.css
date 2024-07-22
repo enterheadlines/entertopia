@@ -1,7 +1,7 @@
 body {
 	background: linear-gradient(-45deg, #2660e8, #9ddedb, #266eff, #d13aff);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 9s ease infinite;
 	height: 100vh;
     color: white;
     font-family: "Press Start 2P";
@@ -15,7 +15,7 @@ body {
 	border-color: black;
 	padding: 15px;
 	background-color: rgb(0, 0, 0);
-   
+    box-shadow: 0 0 10px rgb(25, 25, 26);
 }
 @keyframes gradient {
 	0% {
