@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #2660e8, #9ddedb, #266eff, #d13aff);
+    background-image: url("vid/better.mp4");
 	background-size: 400% 400%;
 	animation: gradient 9s ease infinite;
 	height: 100vh;
