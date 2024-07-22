@@ -45,13 +45,10 @@ a:hover{
 	font-family: "Press Start 2P";
 	text-decoration: none;
 	color: rgb(97, 90, 90);
+	box-shadow: 0 0 10px rgb(94, 94, 97);
 }
 a:active{
     font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
-}
-#video{
-	height: 100%;
-	width: 100%;
 }
