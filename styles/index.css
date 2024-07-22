@@ -1,5 +1,5 @@
 body {
-    background-image: url("vid/better.mp4");
+    background-image: url("/vid/better.mp4");
 	background-size: 400% 400%;
 	animation: gradient 9s ease infinite;
 	height: 100vh;
