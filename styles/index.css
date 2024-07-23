@@ -59,13 +59,3 @@ a:active{
 	margin:1px;
 }
 
-.nav-btn {
-	position: relative;
-	border: none;
-	border-radius: 3px;
-	padding: 10px 20px;
-	background-color: transparent;
-	color: #ffffff;
-	cursor: pointer;
-	text-decoration: none;
-  }
