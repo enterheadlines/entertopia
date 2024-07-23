@@ -58,3 +58,8 @@ a:active{
 	width:30px;
 	margin:1px;
 }
+.nav-btn{
+    margin: 0px;
+	padding: 0px;
+	float: left;
+}
