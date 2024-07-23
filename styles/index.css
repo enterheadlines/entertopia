@@ -58,6 +58,14 @@ a:active{
 	width:30px;
 	margin:1px;
 }
-#time{
-	text-align: right;
-}
+
+.nav-btn {
+	position: relative;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	background-color: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: none;
+  }
