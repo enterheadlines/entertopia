@@ -16,8 +16,8 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     const style = iframe.style
     const link = doc.createElement('link')
 
-    const name = localStorage.getItem('name') || 'My Drive - Google Drive'
-    const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+    const name = localStorage.getItem('name') || 'Google'
+    const icon = localStorage.getItem('icon') || '/google.webp'
 
     doc.title = name
     link.rel = 'icon'
@@ -32,7 +32,7 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
 
-    const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
+    const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://google.com'
     location.replace(pLink)
 
     const script = doc.createElement('script')
