@@ -58,4 +58,18 @@ a:active{
 	width:30px;
 	margin:1px;
 }
-
+.row{
+	display: flex;
+    flex-wrap: wrap;
+}
+.column{
+	padding:5px;
+}
+#button{
+	height:100px;
+	width:100px;
+}
+#img{
+	height: 50px;
+	width: 50px;
+}
