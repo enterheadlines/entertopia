@@ -63,11 +63,11 @@ a:active{
     flex-wrap: wrap;
 }
 .column{
-	padding:5px;
+	padding:10px;
 }
 #button {
 	font-family: "Press Start 2P";
-	padding: 15px 30px;
+	padding:0px;
 	font-size: 18px;
   background-color: #ad47c6;
   color: #ffffff;
