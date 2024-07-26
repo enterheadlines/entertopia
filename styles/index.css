@@ -65,13 +65,41 @@ a:active{
 .column{
 	padding:5px;
 }
-#button{
-	border-radius: 20px;
-	box-shadow: 0 0 10px   rgb(176, 28, 176);
-	background-color: rgb(176, 28, 176);
-	height:150px;
-	width:150px;
-}
+#button {
+	font-family: "Press Start 2P";
+	padding: 15px 30px;
+	font-size: 18px;
+  background-color: #ad47c6;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgb(196, 31, 214);
+  text-decoration: none;
+  display: inline;
+  margin: 0px;
+  margin-bottom: 10px;
+  height:150px;
+  width:150px;
+  }
+  #button:hover {
+  background-color: #8e348e;
+  transform: scale(1.1);
+  }
+  
+  @keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+  
+	100% {
+		opacity: 1;
+	}
+  }
 #img{
 	height: 130px;
 	width: 130px;
