@@ -4,7 +4,7 @@
        <title>Apps</title>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
-       <meta name="author" content="Utopia">
+       <meta name="author" content="Entertopia">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <script src="/js/fullscreen.js"></script>
          <!-- Google tag (gtag.js) -->
@@ -20,9 +20,60 @@
      crossorigin="anonymous"></script>
      
        <link rel="stylesheet" href="/styles/index.css">
-       <link rel="icon" href="Screenshot 2024-05-30 20.33.35.png">  
+       <link rel="icon" href="/Screenshot 2024-05-30 20.33.35.png">  
        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap" rel="stylesheet">
-       <style>
+      <script>
+        let inFrame
+
+try {
+  inFrame = window !== top
+} catch (e) {
+  inFrame = true
+}
+
+if (!inFrame && !navigator.userAgent.includes('Firefox')) {
+  const popup = open('about:blank', '_blank')
+  if (!popup || popup.closed) {
+    alert('Please allow popups and redirects.')
+  } else {
+    const doc = popup.document
+    const iframe = doc.createElement('iframe')
+    const style = iframe.style
+    const link = doc.createElement('link')
+
+    const name = localStorage.getItem('name') || 'My Drive - Google Drive'
+    const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+
+    doc.title = name
+    link.rel = 'icon'
+    link.href = icon
+
+    iframe.src = location.href
+    style.position = 'fixed'
+    style.top = style.bottom = style.left = style.right = 0
+    style.border = style.outline = 'none'
+    style.width = style.height = '100%'
+
+    doc.head.appendChild(link)
+    doc.body.appendChild(iframe)
+
+    const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
+    location.replace(pLink)
+
+    const script = doc.createElement('script')
+    script.textContent = `
+      window.onbeforeunload = function (event) {
+        const confirmationMessage = 'Leave Site?';
+        (event || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
+      };
+    `
+    doc.head.appendChild(script)
+  }
+}
+      </script>
+      
+      <style>
 
 video {
   width:600px;
@@ -47,7 +98,7 @@ video {
     </head>
     <body>
       <div id="navshi">
-        <span><a href="/index.html">Home</a>&nbsp;<a href="general/games.html">Games</a>&nbsp;<a href="general/apps.html">Apps</a>&nbsp;<a href="general/settings.html">Settings</a>&nbsp;<a href="general/login.html">Login</a>&nbsp;<a href="general/more.html">More</a><a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a></span>
+        <span><a href="/index.html">Home</a>&nbsp;<a href="games.html">Games</a>&nbsp;<a href="apps.html">Apps</a>&nbsp;<a href="settings.html">Settings</a>&nbsp;<a href="login.html">Login</a>&nbsp;<a href="more.html">More</a><a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a></span>
       
       </div>
         </div>
