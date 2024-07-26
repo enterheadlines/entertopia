@@ -101,6 +101,7 @@ a:active{
 	}
   }
 #img{
+	padding:5px;
 	height: 130px;
 	width: 130px;
 	border-radius: 20px;
