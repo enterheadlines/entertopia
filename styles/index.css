@@ -59,10 +59,12 @@ a:active{
 	margin:1px;
 }
 .row{
+	margin: 5px;
 	display: flex;
     flex-wrap: wrap;
 }
 .column{
+	
 	padding:10px;
 }
 #button {
@@ -81,7 +83,7 @@ a:active{
   box-shadow: 0 0 10px rgb(196, 31, 214);
   text-decoration: none;
   display: inline;
-  margin: 5px;
+  margin: 0px;
   margin-bottom: 10px;
   height:150px;
   width:150px;
