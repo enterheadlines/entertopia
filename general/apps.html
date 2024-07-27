@@ -55,23 +55,15 @@ video {
         </div>
         <script>
             function search() {
-        const input = document.getElementById("input").value.toLowerCase();
-        const docks = document.getElementsByClassName("dock");
-        for (let i = 0; i < docks.length; i++) {
-            const div = docks[i].getElementsByTagName("div")[0];
-            // Check if the div exists and if its inner text includes the input string
-            if (div && div.innerText.toLowerCase().includes(input)) {
-                docks[i].style.display = ""; // Show elements that match
-            } else {
-                docks[i].style.display = "none"; // Hide elements that don't match
+            const input = document.getElementById("search").value.toLowerCase();
+            document.querySelectorAll('#dock').forEach(dock => 
+            dock.style.display = (dock.querySelector('div')?.innerText.toLowerCase().includes(input)) ? "" : "none"
+            );
             }
-        }
-        }
-        
-        </script>
+         </script>
         <br>
         <center style="position: relative;">
-                        <input style="width: 70%; background-color: rgb(196, 31, 214); border-radius: 20px; border-style: none; padding: 5px 10px; color: #fff; box-shadow: 0 0 10px rgb(176, 32, 192)" id="input" type="text" oninput="search()"  placeholder="Search our game library!">
+            <input id="search" oninput="search()" placeholder="Search for apps..." type="text" style="width: 70%; background-color: rgb(196, 31, 214); border-radius: 20px; border-style: none; padding: 5px 10px; color: #fff; box-shadow: 0 0 10px rgb(176, 32, 192)"/>
                     </center>
 <br>
      <div class="row">
