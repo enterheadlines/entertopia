@@ -91,6 +91,30 @@ video {
         localStorage.setItem("theme", "blue");
     })
 </script>
+<script>
+          document.addEventListener('DOMContentLoaded', function() {
+            setInterval(updateTheme, 1000);
+        });
+
+        function updateTheme() {
+    if (localStorage.getItem("theme") != null) {
+        var theme = localStorage.getItem("theme");
+        // Edit the body's background gradient based on the theme
+        if (theme == "light") {
+            document.body.style.background = "linear-gradient(to right, #b6fbff, #ffffff)"; // light blue to white
+        } else if (theme == "dark") {
+            document.body.style.background = "linear-gradient(to right, #333333, #1a1a2e)"; // dark grey to dark blue
+        } else if (theme == "red") {
+            document.body.style.background = "linear-gradient(to right, #000000, red)"; // black to dark grey
+        } else if (theme == "purple") {
+            document.body.style.background = "linear-gradient(to right, #8e44ad, #c154c1)"; // dark purple to light purple
+        } else if (theme == "blue") {
+            document.body.style.background = "linear-gradient(to right, #2c3e50, #4ca1af)"; // darker blue to lighter blue
+        }
+    }
+}
+
+</script>
 <br>
 
 
