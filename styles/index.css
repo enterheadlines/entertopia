@@ -201,8 +201,8 @@ a:active{
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	}
 #iframe{
-	height: 700;
-	width: 500;
+	height:50%;
+	width: 70%;
 	border:none;
 	text-align:center;
 	box-shadow: 0 0 10px rgb(176, 32, 192);
