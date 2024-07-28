@@ -85,8 +85,8 @@ a:active{
   display: inline;
   margin: 0px;
   margin-bottom: 10px;
-  height:150px;
-  width:150px;
+  height:90px;
+  width:90px;
   }
   #button:hover {
   background-color: #8e348e;
@@ -104,8 +104,8 @@ a:active{
   }
 #img{
 	padding:5px;
-	height: 130px;
-	width: 130px;
+	height: 70px;
+	width: 70px;
 	border-radius: 20px;
 }
 #hide{
