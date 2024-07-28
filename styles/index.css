@@ -200,3 +200,11 @@ a:active{
 	-webkit-backdrop-filter: blur(10.4px);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	}
+#iframe{
+	height: 700;
+	width: 500;
+	border:none;
+	text-align:center;
+	box-shadow: 0 0 10px rgb(176, 32, 192);
+	resize: both;
+}
