@@ -1,7 +1,6 @@
 body {
 	background: linear-gradient(to right, #2c3e50, #4ca1af); /* Smooth gradient background */
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
 	height: 100vh;
     color: white;
     font-family: "Press Start 2P";
