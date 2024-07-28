@@ -59,12 +59,11 @@ a:active{
 	margin:1px;
 }
 .row{
-	margin: 7px;
+	margin: 3px;
 	display: flex;
     flex-wrap: wrap;
 }
 .column{
-	
 	padding:10px;
 }
 #button {
@@ -149,4 +148,39 @@ a:active{
 	padding: 5px;
 	box-shadow: 0 0 10px rgb(176, 32, 192)
    
+  }
+  .button {
+	font-family: "Press Start 2P";
+	padding:0px;
+	font-size: 18px;
+  background-color: #ad47c6;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgb(196, 31, 214);
+  text-decoration: none;
+  display: inline;
+  margin: 0px;
+  margin-bottom: 10px;
+  height:200px;
+  width:500px;
+  }
+  .button:hover {
+  background-color: #8e348e;
+  transform: scale(1.1);
+  }
+  
+  @keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+  
+	100% {
+		opacity: 1;
+	}
   }

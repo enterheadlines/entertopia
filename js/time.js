@@ -17,3 +17,4 @@ function timeFunction() {
 
 	document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds + ampm ;
 }
+setInterval(timeFunction, 1000);
