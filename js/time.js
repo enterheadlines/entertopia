@@ -29,15 +29,15 @@ if (localStorage.getItem("theme") != null) {
 var theme = localStorage.getItem("theme");
 // Edit the body's background gradient based on the theme
 if (theme == "light") {
-	document.body.style.background = "linear-gradient(to right, #b6fbff, #ffffff)"; // light blue to white
+	document.body.style.background = "linear-gradient(-45deg, #b6fbff, #ffffff, #b6fbff, #ffffff)"; // light blue to white
 } else if (theme == "dark") {
-	document.body.style.background = "linear-gradient(to right, #333333, #000000)"; // dark grey to dark blue
+	document.body.style.background = "linear-gradient(-45deg, #333333, #000000, #333333, #000000)"; // dark grey to dark blue
 } else if (theme == "red") {
-	document.body.style.background = "linear-gradient(to right, #000000, red)"; // black to dark grey
+	document.body.style.background = "linear-gradient(-45deg, #000000, red, #000000, red)"; // black to dark grey
 } else if (theme == "purple") {
-	document.body.style.background = "linear-gradient(to right, #8e44ad, #c154c1)"; // dark purple to light purple
+	document.body.style.background = "linear-gradient(-45deg, #b42ad3, #7c29ca, #ab33a3, #ed3ba9)"; // dark purple to light purple
 } else if (theme == "blue") {
-	document.body.style.background = "linear-gradient(to right, #2c3e50, #4ca1af)"; // darker blue to lighter blue
+	document.body.style.background = "linear-gradient(-45deg, #2c3e50, #4ca1af, #2c3e50, #4ca1af)"; // darker blue to lighter blue
 }
 }
 }
