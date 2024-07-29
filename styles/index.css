@@ -195,20 +195,27 @@ a:active{
 	   resize:both;   
 }
 #fullscreenimage{
-	height: 10px;
-	width: 10px;
+	height: 30px;
+	width: 30px;
 }
 #gamebutton{
+	height: 50px;
+	width: 50px;
 	background-color: #ab33a3;
 	color: white;
 	font-family: "Press Start 2P";
 	padding: 10px 20px;
 	font-size: 16px;
 	border: none;
-	border-radius: 20px;
+	border-radius: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s, color 0.3s;
 	text-decoration: none;
 	display: inline-block;
 	margin-right: 10px;
+}
+hr{
+	background-color:#b42ad3;
+	margin:0px;
+	padding:0px
 }
