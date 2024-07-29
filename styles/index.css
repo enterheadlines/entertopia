@@ -6,6 +6,7 @@ body {
     color: white;
     font-family: "Press Start 2P";
 	margin: 0px;
+	text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 #navshi {
 	margin: 0px;
@@ -207,7 +208,8 @@ hr{
 }
 
 
-    #gamebutton{
+    #gameback, 
+	#gamebutton{
   font-family: "Press Start 2P";
   padding: 10px 20px;
   font-size: 16px;
@@ -227,3 +229,12 @@ hr{
 #gamebutton:hover {
   background-color: #6d2d70;
 }
+
+#gameback{
+	background-color: #de2f95;
+	color: #ffffff;
+  }
+  #gameback:hover {
+	background-color: #922f97;
+  }
+  
