@@ -225,6 +225,7 @@ hr{
 #gamebutton{
   background-color: #c44fb6;
   color: #ffffff;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 #gamebutton:hover {
   background-color: #6d2d70;
@@ -233,6 +234,7 @@ hr{
 #gameback{
 	background-color: #de2f95;
 	color: #ffffff;
+	text-shadow: 0 0 5px rgb(255, 255, 255);
   }
   #gameback:hover {
 	background-color: #af308d;
