@@ -191,6 +191,9 @@ a:active{
 	}
 	
 	#gamebar {
+		height:70px;
+		width:200px;
+		border:none;
 		position: absolute;
 	margin: 8px;
 	background: rgba(255, 255, 255, 0.33);
@@ -199,12 +202,13 @@ a:active{
 	backdrop-filter: blur(10.4px);
 	-webkit-backdrop-filter: blur(10.4px);
 	border: 1px solid rgba(255, 255, 255, 0.3);
+
 	}
 #iframe{
-	height:660px;
-	width: 1220px;
+	margin:10px;
+	height:500px;
+	width: 1000px;
 	border:none;
-	text-align:center;
-	box-shadow: 0 0 10px rgb(176, 32, 192);
 	resize: both;
+	border-radius:20px;
 }
