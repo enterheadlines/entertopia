@@ -199,7 +199,16 @@ a:active{
 	width: 10px;
 }
 #gamebutton{
-	text-align: center;
-	height: 20px; 
-	width: 20px;
+	background-color: #ab33a3;
+	color: white;
+	font-family: "Press Start 2P";
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 10px;
 }
