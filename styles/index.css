@@ -195,7 +195,7 @@ a:active{
 	display: block;
 	width: 60vw;
 	margin-top: -4px;
-	padding: 0px;
+	padding:5px;
 	height: 48px;
    margin-left: 20px;
 	padding-bottom: 10px ;
@@ -203,15 +203,10 @@ a:active{
    
 	}
 #iframe{
-
-	width: 100%;
-	height: 100%;
-  display: inline;
-	top:0; 
-	right: 0;
-   
-  
-	
-  
-  
+	margin:10px; 
+	height:300px;
+	 width: 60vw;
+	  border:none;
+	   resize:both; 
+	   border-radius:20px;
 }
