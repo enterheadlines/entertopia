@@ -38,7 +38,6 @@ a {
 	text-decoration: none;
 	color: white;
 	transition: background-color 0.3s, transform 0.3s;
-
 }
 a:visited{
 	font-family: "Press Start 2P";
@@ -241,4 +240,7 @@ hr{
   #gameback:hover {
 	background-color: #af308d;
   }
-  
+  #navbar{
+	position: absolute;
+    bottom: 0; /* set the bottom to 0*/
+  }
