@@ -243,3 +243,6 @@ hr{
   #navbar{
     bottom: 0; /* set the bottom to 0*/
   }
+  #legal{
+	margin: 10px;
+  }
