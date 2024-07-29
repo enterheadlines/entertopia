@@ -37,6 +37,8 @@ a {
 	font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
+	transition: background-color 0.3s, transform 0.3s;
+
 }
 a:visited{
 	font-family: "Press Start 2P";
