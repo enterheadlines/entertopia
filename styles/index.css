@@ -16,6 +16,7 @@ body {
 	padding: 15px;
 	background-color: rgb(176, 28, 176);
     box-shadow: 0 0 10px   rgb(176, 28, 176);
+	backdrop-filter: blur(10px) saturate(200%) brightness(70%);
 }
 @keyframes gradient {
 	0% {
@@ -216,8 +217,6 @@ a:active{
 	margin-right: 10px;
 }
 hr{
-	size: 7px;
-	color:#8e348e;
 	margin:0px;
 	padding:0px
 }
