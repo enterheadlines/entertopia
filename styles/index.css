@@ -220,3 +220,25 @@ hr{
 	margin:0px;
 	padding:0px
 }
+
+
+    #gamebutton{
+  font-family: "Press Start 2P";
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#gamebutton{
+  background-color: #c44fb6;
+  color: #ffffff;
+}
+#gamebutton:hover {
+  background-color: #6d2d70;
+}
