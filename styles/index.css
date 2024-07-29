@@ -195,6 +195,7 @@ a:active{
 	   resize:both;   
 }
 #fullscreenimage{
+	text-align: center;
 	height: 30px;
 	width: 30px;
 }
@@ -204,7 +205,7 @@ a:active{
 	background-color: #ab33a3;
 	color: white;
 	font-family: "Press Start 2P";
-	padding: 10px 20px;
+	padding:5px;
 	font-size: 16px;
 	border: none;
 	border-radius: 10px;
@@ -215,7 +216,8 @@ a:active{
 	margin-right: 10px;
 }
 hr{
-	background-color:#b42ad3;
+	size: 7px;
+	color:#8e348e;
 	margin:0px;
 	padding:0px
 }
