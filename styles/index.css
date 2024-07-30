@@ -248,9 +248,5 @@ hr{
   }
   #navbar{
 	text-align: center;
-	margin-top: auto;
-    height: 80px;
-    grid-auto-flow: column;
-    grid-column-gap: 30px;
-    display: flex;
+	bottom: 0px;
   }
