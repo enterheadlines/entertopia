@@ -248,7 +248,6 @@ hr{
   }
   #navbar{
 	position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
+    bottom: 0;  
+    z-index: 5;
   }
