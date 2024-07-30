@@ -246,10 +246,38 @@ hr{
   #legal{
 	margin: 10px;
   }
-  #navbar{
-	margin-bottom:5px;
-	display:flex;
-	text-align: center;
-    bottom: 0;  
-    z-index: 1;
+  #interstellar{
+  text-align: center;
+  background: linear-gradient(-45deg, #9e459b, #71c4a0, #f80faf7a, #195f8e);
+  animation: gradient 5s ease infinite;
+  color: white;
+  border-radius: 20px;
+  border:none;
   }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
