@@ -247,14 +247,10 @@ hr{
 	margin: 10px;
   }
   #navbar{
+	text-align: center;
 	margin-top: auto;
-    align-self: center;
     height: 80px;
-    display: grid;
     grid-auto-flow: column;
     grid-column-gap: 30px;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    z-index: 1
   }
