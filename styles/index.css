@@ -87,8 +87,8 @@ a:active{
   display: inline;
   margin: 0px;
   margin-bottom: 10px;
-  height:90px;
-  width:90px;
+  height:130px;
+  width:130px;
   }
   #button:hover {
   background-color: #8e348e;
@@ -106,8 +106,8 @@ a:active{
   }
 #img{
 	padding:5px;
-	height: 70px;
-	width: 70px;
+	height: 110px;
+	width: 110px;
 	border-radius: 20px;
 }
 #hide{
@@ -265,7 +265,13 @@ hr{
 		background-position: 0% 50%;
 	}
 }
-
+#interstellarsucks{
+	text-align: center;
+	background: linear-gradient(-45deg, #9e459b, #71c4a0, #f80faf7a, #195f8e);
+	color: white;
+	border-radius: 20px;
+	border:none;
+}
 
 
 
