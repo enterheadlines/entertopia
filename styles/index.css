@@ -271,7 +271,11 @@ hr{
     justify-content: center;
     flex-direction: row;
 }
-
+#navbar>*{
+flex: 1 1 800px;
+display: flex;
+gap: 80px
+}
 
 
 
