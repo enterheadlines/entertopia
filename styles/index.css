@@ -265,6 +265,11 @@ hr{
 		background-position: 0% 50%;
 	}
 }
+#navbar{
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
 
 
 
