@@ -265,20 +265,6 @@ hr{
 		background-position: 0% 50%;
 	}
 }
-#navbar{
-	margin-top: auto;
-
-	align-self: center;
-	height: 80px;
-	display: grid;
-	grid-auto-flow: column;
-	grid-column-gap: 30px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	z-index: 1;
-}
-
 
 
 
