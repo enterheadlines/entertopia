@@ -267,8 +267,9 @@ hr{
 }
 #navbar{
 	display: flex;
-	justify-content: center;
-	align-items: end;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 
 
