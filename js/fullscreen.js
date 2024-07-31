@@ -11,3 +11,9 @@ function toggleFullscreen() {
       document.exitFullscreen();
     }
   }
+
+
+  function refreshIframe() {
+    var ifr = document.getElementsByName('iframe')[0];
+    ifr.src = ifr.src;
+}
