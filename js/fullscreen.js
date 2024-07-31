@@ -14,6 +14,6 @@ function toggleFullscreen() {
 
 
   function refreshIframe() {
-    var ifr = document.getElementsById('iframe')[0];
+    var ifr = document.getElementsByName('iframe')[0];
     ifr.src = ifr.src;
 }

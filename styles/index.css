@@ -313,9 +313,7 @@ hr{
 	  }
 	}
 #devi{
-	display:flex;
-	justify-content: center;
-	align-items: center;
+	font-size: large;
 }
 
 
