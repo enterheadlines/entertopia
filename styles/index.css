@@ -266,17 +266,18 @@ hr{
 	}
 }
 #navbar{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-#navbar>*{
-flex: 1 1 800px;
-display: flex;
-gap: 80px
-}
+	margin-top: auto;
 
+	align-self: center;
+	height: 80px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 30px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	z-index: 1;
+}
 
 
 
