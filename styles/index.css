@@ -87,8 +87,8 @@ a:active{
   display: inline;
   margin: 0px;
   margin-bottom: 10px;
-  height:130px;
-  width:130px;
+  height:100px;
+  width:100px;
   }
   #button:hover {
   background-color: #8e348e;
@@ -106,8 +106,8 @@ a:active{
   }
 #img{
 	padding:5px;
-	height: 110px;
-	width: 110px;
+	height: 80px;
+	width: 80px;
 	border-radius: 20px;
 }
 #hide{
@@ -313,6 +313,7 @@ hr{
 	  }
 	}
 #devi{
+
 	font-size: large;
 }
 
