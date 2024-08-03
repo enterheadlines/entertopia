@@ -43,16 +43,19 @@ a:visited{
 	font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
+	transition: background-color 0.3s, color 0.3s;
 }
 a:hover{
 	font-family: "Press Start 2P";
 	text-decoration: none;
 	color: rgb(222, 211, 211);
+	transition: background-color 0.3s, color 0.3s;
 }
 a:active{
     font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
+	transition: background-color 0.3s, color 0.3s;
 }
 #image{
 	float: right;
