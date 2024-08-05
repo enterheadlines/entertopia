@@ -324,8 +324,14 @@ hr{
 	position:absolute;
 	bottom: 0px;
 }
-
-
+p{
+	font-size: small;
+}
+#melt{
+	height:50px;
+	width:50px;
+	border-radius: 20px;
+}
 
 
 
