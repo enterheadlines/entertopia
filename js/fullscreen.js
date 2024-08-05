@@ -24,7 +24,6 @@ function cloakPage(selectedCloak) {
       'docs': '/google-docs.webp',
       'drive': '/google-drive.webp',
       'classroom': '/home.webp',
-      'chrome': '/chrome.webp',
       'none': '/Screenshot 2024-05-30 20.33.35.png'
   };
 
@@ -33,7 +32,6 @@ function cloakPage(selectedCloak) {
       'docs': 'Google Docs',
       'drive': 'Google Drive',
       'classroom': 'Google Classroom',
-      'chrome': 'Google Chrome',
       'none': 'Entertopia'
   };
 
