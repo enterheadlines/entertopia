@@ -318,12 +318,7 @@ hr{
 #devi{
 	font-size: large;
 }
-#ass{
-	text-align: center;
-	align-items: center;
-	position:absolute;
-	bottom: 0px;
-}
+
 p{
 	font-size: small;
 }
