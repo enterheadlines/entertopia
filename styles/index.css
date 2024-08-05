@@ -316,10 +316,12 @@ hr{
 	  }
 	}
 #devi{
-
 	font-size: large;
 }
-
+#ass{
+	position: absolute;
+	bottom: 0px;
+}
 
 
 
