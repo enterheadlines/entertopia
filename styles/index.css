@@ -319,6 +319,9 @@ hr{
 	font-size: large;
 }
 #ass{
+	right:50;
+	left:50;
+	position:absolute;
 	bottom: 0px;
 }
 
