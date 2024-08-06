@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #b42ad3, #7c29ca, #ab33a3, #ed3ba9);
+	background: linear-gradient(-45deg, #b42ad3, #7c29ca, #ab33a3, #ed3ba9, #147b82, #29ca69,);
 	background-size: 400% 400%;
 	animation: gradient 2s ease infinite;
 	height: 100vh;
@@ -316,7 +316,7 @@ hr{
 	  }
 	}
 #devi{
-	font-size: large;
+	font-size: 300px;
 }
 
 p{
