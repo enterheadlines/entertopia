@@ -1,7 +1,7 @@
 body {
 	background: linear-gradient(-45deg, #b42ad3, #7c29ca, #ab33a3, #ed3ba9);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 2s ease infinite;
 	height: 100vh;
     color: white;
     font-family: "Press Start 2P";
@@ -323,8 +323,8 @@ p{
 	font-size: small;
 }
 #melt{
-	height:50px;
-	width:50px;
+	height:150px;
+	width:150px;
 	border-radius: 20px;
 }
 
