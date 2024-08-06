@@ -1,7 +1,7 @@
 body {
 	background: linear-gradient(-45deg, #b42ad3, #7c29ca, #ab33a3, #ed3ba9, #147b82, #29ca69);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
     color: white;
     font-family: "Press Start 2P";
@@ -90,8 +90,8 @@ a:active{
   display: inline;
   margin: 0px;
   margin-bottom: 10px;
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
   }
   #button:hover {
   background-color: #8e348e;
@@ -109,8 +109,8 @@ a:active{
   }
 #img{
 	padding:5px;
-	height: 80px;
-	width: 80px;
+	height: 130px;
+	width: 130px;
 	border-radius: 20px;
 }
 #hide{
