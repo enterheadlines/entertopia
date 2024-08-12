@@ -58,29 +58,7 @@
 
     </div>
     </div>
-    <script>
-        const searchbar = document.querySelector(".search");
-        const gamediv = document.querySelector("#arcade");
-        const games = gamediv.querySelectorAll(".dock")
-
-        searchbar.addEventListener("input", search);
-
-        function search() {
-            const searchQuery = searchbar.value.trim().toLowerCase();
-
-            games.forEach((game) => {
-                const gameName = game.textContent.toLowerCase();
-                if (gameName.includes(searchQuery)) {
-                    game.style.display = "block";
-                } else {
-                    game.style.display = "none";
-                }
-            });
-        }
-    </script>
     <br>
-    <input onkeyup="search()" class="search" type="text" placeholder="Search For Games">
-    <div id="arcade">
         <div class="row">
             <div class="column">
                 <a href="/app/1v1.html"><button id="button"><img
@@ -545,7 +523,6 @@
                     </button> </a>
             </div>
         </div>
-    </div>
     <br>
     <center><button id="interstellarsucks"
             onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Go back?</button></center>
