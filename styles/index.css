@@ -177,6 +177,7 @@ a:active{
   width:500px;
   }
   .button:hover {
+	border-radius: 25px;
   background-color: #8e348e;
   transform: scale(1.1);
   }
