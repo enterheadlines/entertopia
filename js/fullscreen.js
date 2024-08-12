@@ -17,6 +17,4 @@ function toggleFullscreen() {
     var ifr = document.getElementsByName('iframe')[0];
     ifr.src = ifr.src;
 }
-console.log(
-  ENTERTOPIA
-);
+console.log("ENTERTOPIA");
