@@ -317,10 +317,7 @@ hr{
 	  }
 	}
 #devi{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height:100vh;
+	margin-top: 15%;
 	font-size: 20px;
 }
 

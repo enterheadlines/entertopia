@@ -17,6 +17,9 @@ function toggleFullscreen() {
     var ifr = document.getElementsByName('iframe')[0];
     ifr.src = ifr.src;
 }
+
+
+
 updateText();
 setInterval(updateText, 10000);
 
@@ -28,4 +31,3 @@ console.log(`
 ███████╗██║░╚███║░░░██║░░░███████╗██║░░██║░░░██║░░░╚█████╔╝██║░░░░░██║██║░░██║
 ╚══════╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝╚═╝░░╚═╝
     Version 5.0`);
-});
