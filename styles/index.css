@@ -346,6 +346,7 @@ width: 100%;
 	width:350px;
 }
 #newest-release{
+	padding: 20px 20px;
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
 	border-radius: 15px;
@@ -354,7 +355,14 @@ width: 100%;
 	width:170px;
 }
 
-
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+  }
+  
 
 
 
