@@ -1,0 +1,11 @@
+{
+    "name": "Entertopia",
+    "version": "5.0.0",
+    "description": "Web games",
+    "manifest_version": 3,
+    "author": "Infamy",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Entertopia"
+    }
+}
