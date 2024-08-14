@@ -316,8 +316,12 @@ p{
 	width:150px;
 	border-radius: 20px;
 }
-
-
+#stat-counter{
+text-align: center;
+position: fixed;
+bottom: 10px;
+width: 100%;
+}
 
 
 
