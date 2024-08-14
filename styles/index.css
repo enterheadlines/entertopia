@@ -367,6 +367,8 @@ width: 100%;
 	flex-direction: row;
 	gap: 50px;
   }
-
+hr{
+	size: 10;
+}
 
 
