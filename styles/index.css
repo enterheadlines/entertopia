@@ -1,7 +1,7 @@
+
 body {
-	background: linear-gradient(-45deg, #ac3999, #71c4a0, #203dcf7a, #195f8e);
+	background: linear-gradient(-45deg, #333131, #474948);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
 	height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,17 +10,17 @@ body {
     font-family: "Press Start 2P";
     color: white;
     font-family: "Press Start 2P";
-    margin: 10px;
+    margin: 0px;
 }
 #navshi {
 	margin: 0px;
 	border: 1px;
 	border-bottom: 3px;
 	border-bottom-color: white;
-	border-color:   rgb(176, 28, 176);
+	border-color:   rgb(58, 53, 58);
 	padding: 15px;
-	background-color: rgb(176, 28, 176);
-    box-shadow: 0 0 10px   rgb(176, 28, 176);
+	background-color: rgb(58, 53, 58);
+    box-shadow: 0 0 10px   rgb(58, 53, 58);
 	backdrop-filter: blur(6px);
 }
 @keyframes gradient {
@@ -133,37 +133,13 @@ a:active{
 	box-shadow: 0 0 10px rgb(176, 32, 192)
    
   }
-  #search:focus{
-	font-family: 'Press Start 2P';
-	color: white;
-	background-color: rgb(196, 31, 214);
-	height: 50px;
-	width: 600px;
-	border-radius: 20px;
-	cursor: pointer;
-	border: none;
-	padding: 5px;
-	box-shadow: 0 0 10px rgb(176, 32, 192)
-   
-  }
-  #search:select{
-	font-family: 'Press Start 2P';
-	color: white;
-	background-color: rgb(196, 31, 214);
-	height: 50px;
-	width: 600px;
-	border-radius: 20px;
-	cursor: pointer;
-	border: none;
-	padding: 5px;
-	box-shadow: 0 0 10px rgb(176, 32, 192)
-   
-  }
+
+
   .button {
 	font-family: "Press Start 2P";
 	padding:0px;
 	font-size: 18px;
-  background-color: #ad47c6;
+  background-color: rgb(58, 53, 58);
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -172,7 +148,7 @@ a:active{
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  box-shadow: 0 0 10px rgb(196, 31, 214);
+  box-shadow: 0 0 10px  rgb(58, 53, 58);
   text-decoration: none;
   display: inline;
   margin: 0px;
