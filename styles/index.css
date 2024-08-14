@@ -1,7 +1,6 @@
 body {
-	background: linear-gradient(-45deg, #b42ad3, #11ae60, #1ac7c4, #b5171f, #b9d00d);
+	background-image: url("https://openseauserdata.com/files/1d6903e9df982684a86f931c5b04888b.gif");
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
 	height: 100vh;
     color: white;
     font-family: "Press Start 2P";
