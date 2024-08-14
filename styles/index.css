@@ -362,7 +362,11 @@ width: 100%;
 	flex-direction: column;
 	text-align: center;
   }
-  
+  #ass{
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+  }
 
 
 
