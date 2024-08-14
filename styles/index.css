@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+	font-weight:900;
     font-family: sans-serif;
     color: white;
     margin: 0px;
@@ -38,24 +39,28 @@ body {
 	margin: 200px;
 }
 a {
-	font-family: "Press Start 2P";
+	font-weight:900;
+    font-family: sans-serif;
 	text-decoration: none;
 	color: white;
 }
 a:visited{
-	font-family: "Press Start 2P";
+	font-weight:900;
+    font-family: sans-serif;
 	text-decoration: none;
 	color: white;
 
 }
 a:hover{
-	font-family: "Press Start 2P";
+	font-weight:900;
+    font-family: sans-serif;
 	text-decoration: none;
 	color: rgb(222, 211, 211);
 
 }
 a:active{
-    font-family: "Press Start 2P";
+	font-weight:900;
+    font-family: sans-serif;
 	text-decoration: none;
 	color: white;
 
@@ -77,7 +82,8 @@ a:active{
 	padding:10px;
 }
 #button {
-	font-family: "Press Start 2P";
+	font-weight:900;
+    font-family: sans-serif;
 	padding:0px;
 	font-size: 18px;
   background-color:  rgb(58, 53, 58);
@@ -196,7 +202,8 @@ hr{
     #gameback, 
 	#gamebutton,
 	#gamerefresh{
-  font-family: "Press Start 2P";
+		font-weight:900;
+		font-family: sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
