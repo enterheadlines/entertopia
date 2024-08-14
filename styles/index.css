@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap');
 
 body {
 	background: linear-gradient(-45deg, #333131, #474948);
@@ -8,7 +9,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 	font-weight:900;
-    font-family: sans-serif;
+    font-family: "Inter" sans-serif;
     color: white;
     margin: 0px;
 	box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -40,27 +41,27 @@ body {
 }
 a {
 	font-weight:900;
-    font-family: sans-serif;
+    font-family:  "Inter"sans-serif;
 	text-decoration: none;
 	color: white;
 }
 a:visited{
 	font-weight:900;
-    font-family: sans-serif;
+    font-family: "Inter" sans-serif;
 	text-decoration: none;
 	color: white;
 
 }
 a:hover{
 	font-weight:900;
-    font-family: sans-serif;
+    font-family: "Inter" sans-serif;
 	text-decoration: none;
 	color: rgb(222, 211, 211);
 
 }
 a:active{
 	font-weight:900;
-    font-family: sans-serif;
+    font-family: "Inter" sans-serif;
 	text-decoration: none;
 	color: white;
 
@@ -83,7 +84,7 @@ a:active{
 }
 #button {
 	font-weight:900;
-    font-family: sans-serif;
+    font-family: "Inter" sans-serif;
 	padding:0px;
 	font-size: 18px;
   background-color:  rgb(58, 53, 58);
@@ -142,7 +143,7 @@ a:active{
 
 
   .button {
-	font-family: "Press Start 2P";
+	font-family:  "Inter""Press Start 2P";
 	padding:0px;
 	font-size: 18px;
   background-color: rgb(58, 53, 58);
@@ -203,7 +204,7 @@ hr{
 	#gamebutton,
 	#gamerefresh{
 		font-weight:900;
-		font-family: sans-serif;
+		font-family: "Inter" sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
