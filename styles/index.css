@@ -2,7 +2,7 @@
 
 body {
 	background: linear-gradient(-45deg, #333131, #474948, #636363);
-	animation: gradient 15s ease infinite;
+	animation: gradient 5s ease infinite;
 	background-size: 400% 400%;
 	height: 100vh;
     background-repeat: no-repeat;
@@ -219,7 +219,6 @@ hr{
 #gamebutton{
   background-color: #363636;
   color: #ffffff;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 #gamebutton:hover {
   background-color:  #464646;
@@ -228,7 +227,6 @@ hr{
 #gameback{
 	background-color: #363636;
 	color: #ffffff;
-	text-shadow: 0 0 5px rgb(255, 255, 255);
   }
   #gameback:hover {
 	background-color: #464646;
@@ -236,7 +234,6 @@ hr{
   #gamerefresh{
 	background-color: #363636;
 	color: #ffffff;
-	text-shadow: 0 0 5px rgb(255, 255, 255);
   }
   #gamerefresh:hover {
 	background-color: #464646;
