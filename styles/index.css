@@ -8,8 +8,7 @@ body {
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-	font-weight:900;
-    font-family: "Inter" sans-serif;
+    font-family: "Press Start 2P";
     color: white;
     margin: 0px;
 	box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -41,27 +40,27 @@ body {
 }
 a {
 	font-weight:900;
-    font-family:  "Inter"sans-serif;
+    font-family:"Press Start 2P";
 	text-decoration: none;
 	color: white;
 }
 a:visited{
 	font-weight:900;
-    font-family: "Inter" sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
 
 }
 a:hover{
 	font-weight:900;
-    font-family: "Inter" sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: rgb(222, 211, 211);
 
 }
 a:active{
 	font-weight:900;
-    font-family: "Inter" sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
 
@@ -84,7 +83,7 @@ a:active{
 }
 #button {
 	font-weight:900;
-    font-family: "Inter" sans-serif;
+    font-family:"Press Start 2P";
 	padding:0px;
 	font-size: 18px;
   background-color:  rgb(58, 53, 58);
@@ -143,7 +142,7 @@ a:active{
 
 
   .button {
-	font-family:  "Inter""Press Start 2P";
+	font-family: "Press Start 2P";
 	padding:0px;
 	font-size: 18px;
   background-color: rgb(58, 53, 58);
@@ -204,7 +203,7 @@ hr{
 	#gamebutton,
 	#gamerefresh{
 		font-weight:900;
-		font-family: "Inter" sans-serif;
+		font-family: "Press Start 2P";
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -268,7 +267,7 @@ hr{
 }
 #interstellarsucks{
 	text-align: center;
-	background: linear-gradient(-45deg, #9e459b, #71c4a0, #f80faf7a, #195f8e);
+	background: linear-gradient(-45deg, #242424, #404040);
 	color: white;
 	border-radius: 20px;
 	border:none;
@@ -284,7 +283,7 @@ hr{
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  box-shadow: 0 0 10px rgb(196, 31, 214);
+  box-shadow: 0 0 10px rgb(34, 34, 34);
   text-decoration: none;
   display: inline;
   margin: 0px;
