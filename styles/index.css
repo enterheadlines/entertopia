@@ -320,8 +320,39 @@ position: fixed;
 bottom: 10px;
 width: 100%;
 }
-
-
+#most-popular{
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 15px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+	padding: 20px 20px;
+	height:250px;
+	width: 170px;
+}
+#gameabout{
+    padding: 10px;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: background-color 0.5s ease, color 0.5s ease;
+	margin: 20px 0;
+	background-color: black;
+	height:250px;
+	width:350px;
+}
+#newest-release{
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 15px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+	height:250px;
+	width:170px;
+}
 
 
 
