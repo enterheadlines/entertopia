@@ -7,11 +7,10 @@ body {
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-family: "Press Start 2P";
+    font-family: sans-serif;
     color: white;
-    font-family: "Press Start 2P";
     margin: 0px;
-	box-shadow: 0 0 10px rgb(255, 255, 255)
+	box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 #navshi {
 	margin: 0px;
