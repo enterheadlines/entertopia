@@ -1,13 +1,19 @@
 body {
-	background-image: url("https://openseauserdata.com/files/1d6903e9df982684a86f931c5b04888b.gif");
-	height: 100%;
-	width: 100%;
+	background: linear-gradient(-45deg, #ac3999, #71c4a0, #203dcf7a, #195f8e);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: "Press Start 2P";
     color: white;
     font-family: "Press Start 2P";
-	margin: 0px;
-	text-shadow: 0 0 5px rgb(255, 255, 255);
+    margin: 10px;
 }
 #navshi {
+	position:fixed;
 	margin: 0px;
 	border: 1px;
 	border-bottom: 3px;
