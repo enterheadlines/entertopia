@@ -85,7 +85,7 @@ a:active{
 #button {
 	font-weight:900;
     font-family:"Press Start 2P";
-	padding:10px;
+	padding:0px;
 	font-size: 18px;
   background-color:  rgb(58, 53, 58);
   color: #ffffff;
@@ -125,7 +125,7 @@ a:active{
 	border-radius: 20px;
 }
 #hide{
-   font-size: small;
+   display: none;
 }
 #search{
 	font-family: 'Press Start 2P';
