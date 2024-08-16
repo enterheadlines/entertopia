@@ -55,7 +55,7 @@ video {
         </div>
 <br>
 <center><h1>Entertopia ROMs</h1></center>
-<center><h3>Explore the Entertopia ROMs</h3></center>
+<center><h3 id="splash"> </h3></center>
 <br>
      <div class="row">
         <div class="column">
@@ -209,13 +209,20 @@ video {
     <br>
     <center><button id="interstellarsucks"
             onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Go back?</button></center>
-    <br>
-    <br>
 <br>
 
 
 
     </body>
+    <script>
+        let splashtext = [
+       'Rom haven',
+       'Use the Emulator App in Utilities',
+       'r/Roms',
+     ]
+     
+     document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
+     </script>
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '1211576175672172636', // Infamy Network
