@@ -19,9 +19,9 @@ function toggleFullscreen() {
 }
 
 
+updateText(10000);
 
-
-setInterval(updateText, 10000);
+setInterval(updateText);
 
 console.log(`
 ███████╗███╗░░██╗████████╗███████╗██████╗░████████╗░█████╗░██████╗░██╗░█████╗░
