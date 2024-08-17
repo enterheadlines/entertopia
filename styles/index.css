@@ -15,6 +15,7 @@ body {
 	box-shadow: rgb(255, 255, 255);
 }
 #navshi {
+	
 	margin: 0px;
 	border: 1px;
 	border-bottom: 3px;
@@ -44,7 +45,7 @@ a {
     font-family:"Press Start 2P";
 	text-decoration: none;
 	color: white;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.2s, color 0.2s;
 
 }
 a:visited{
@@ -69,7 +70,7 @@ a:active{
 
 }
 a::after{
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.2s, color 0.2s;
 }
 #image{
 	float: right;
