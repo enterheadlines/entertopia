@@ -44,6 +44,8 @@ a {
     font-family:"Press Start 2P";
 	text-decoration: none;
 	color: white;
+	transition: background-color 0.3s, color 0.3s;
+
 }
 a:visited{
 	font-weight:900;
@@ -66,7 +68,9 @@ a:active{
 	color: white;
 
 }
-
+a::after{
+	transition: background-color 0.3s, color 0.3s;
+}
 #image{
 	float: right;
 	text-align: right;
