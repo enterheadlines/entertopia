@@ -15,7 +15,7 @@ body {
 	box-shadow: rgb(255, 255, 255);
 }
 #navshi {
-	
+
 	margin: 0px;
 	border: 1px;
 	border-bottom: 3px;
@@ -373,5 +373,7 @@ width: 100%;
 	gap: 50px;
   }
 hr{
-	size: 10;
+	border: none;
+	background-color: #363636;
+	height:5px;
 }
