@@ -320,10 +320,10 @@ p{
 	border-radius: 20px;
 }
 #stat-counter{
-left:15px;
+left:25px;
 text-align: left;
 position:fixed;
-bottom: 15px;
+bottom: 10px;
 width: 100%;
 }
 #most-popular{
