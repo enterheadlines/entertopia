@@ -320,6 +320,7 @@ p{
 	border-radius: 20px;
 }
 #stat-counter{
+left:15px;
 text-align: left;
 position:fixed;
 bottom: 15px;
@@ -376,4 +377,7 @@ hr{
 	border: none;
 	background-color: #363636;
 	height:5px;
+}
+i{
+	font-size: 29px;
 }
