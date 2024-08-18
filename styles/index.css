@@ -320,8 +320,7 @@ p{
 	border-radius: 20px;
 }
 #stat-counter{
-left:25px;
-text-align: left;
+text-align: center;
 position:fixed;
 bottom: 10px;
 width: 100%;
