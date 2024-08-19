@@ -321,8 +321,8 @@ p{
 }
 #stat-counter{
 font-size:16px;
-margin:20px;
-text-align: center;
+margin:15px;
+text-align: left;
 position:fixed;
 bottom: 5px;
 width: 100%;
