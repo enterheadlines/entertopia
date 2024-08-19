@@ -380,3 +380,12 @@ i{
 	bottom:5px;
 	position:fixed;
 }
+#stat-counter {
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+  }
+  #kaye{
+	font-size:1px;
+  }
