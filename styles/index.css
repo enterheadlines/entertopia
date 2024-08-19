@@ -319,16 +319,7 @@ p{
 	width:150px;
 	border-radius: 20px;
 }
-#stat-counter{
-border: none;
-border-radius: 20px;
-text-align:center;
-position:fixed;
-bottom: 5px;
-width:100%;
-width: 330px;
-height:230px;
-}
+
 #most-popular{
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
