@@ -375,3 +375,8 @@ hr{
 i{
 	font-size: 29px;
 }
+#discord.{
+	text-align: center;
+	bottom:5px;
+	position:fixed;
+}
