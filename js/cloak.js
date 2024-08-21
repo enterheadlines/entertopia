@@ -9,7 +9,7 @@ try {
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
   if (!popup || popup.closed) {
-    alert('Allow redirects and Popups')
+    alert('Make sure to check Credits and Policy')
   } else {
     const doc = popup.document
     const iframe = doc.createElement('iframe')
