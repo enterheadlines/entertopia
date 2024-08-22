@@ -85,7 +85,7 @@ a::after{
     flex-wrap: wrap;
 }
 .column{
-	padding:10px;
+	padding:7px;
 }
 #button {
 	font-weight:900;
@@ -396,8 +396,9 @@ i{
 	margin-left: 20px;
   }
 #video{
+	border: 0px;
 	flex-wrap: wrap;
-	margin:10px;
+	margin:5px;
 	display: flex;
 	padding:10px;
 }
