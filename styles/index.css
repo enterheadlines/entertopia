@@ -389,3 +389,9 @@ i{
   #kaye{
 	font-size:1px;
   }
+  #foter{
+	text-align: left;
+	position: fixed;
+	bottom: 5px;
+	margin-left: 15px;
+  }
