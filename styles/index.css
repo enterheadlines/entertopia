@@ -222,26 +222,26 @@ hr{
 }
 
 #gamebutton{
-  background-color: #363636;
+  background-color: #4d4d4d;
   color: #ffffff;
 }
 #gamebutton:hover {
-  background-color:  #464646;
+  background-color:  #5c5c5c;
 }
 
 #gameback{
-	background-color: #363636;
+	background-color: #4d4d4d;
 	color: #ffffff;
   }
   #gameback:hover {
-	background-color: #464646;
+	background-color: #5c5c5c;
   }
   #gamerefresh{
-	background-color: #363636;
+	background-color: #4d4d4d;
 	color: #ffffff;
   }
   #gamerefresh:hover {
-	background-color: #464646;
+	background-color: #5c5c5c;
   }
   #navbar{
     bottom: 0; /* set the bottom to 0*/
