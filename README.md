@@ -1,4 +1,4 @@
-# entertopia
+# Entertopia
 ## Features
  - 130+ Games
  - 50+ ROMs
