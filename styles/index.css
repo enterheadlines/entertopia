@@ -383,7 +383,7 @@ i{
 #stat-counter {
 	text-align: center;
 	position: fixed;
-	bottom: 10px;
+	bottom: 8px;
 	width: 100%;
   }
   #kaye{
@@ -392,7 +392,7 @@ i{
   #foter{
 	text-align: left;
 	position: fixed;
-	bottom: 15px;
+	bottom: 27px;
 	margin-left: 20px;
   }
 #video{
