@@ -112,6 +112,8 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
         iframe.src = url;
         win.document.body.appendChild(iframe);
         window.location.replace("https://google.com");
+        const name = localStorage.getItem('name') || 'Google'
+        const icon = localStorage.getItem('icon') || '/google.webp'
 
         var interval = setInterval(function() {
           if (win.closed) {

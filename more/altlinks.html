@@ -58,6 +58,15 @@ video {
 <center>
  <h1>Alt links</h1>
  <br>
+ <h1>Submit Your Text</h1>
+ <form id="textForm">
+     <input type="text" id="userInput" placeholder="Type something..." required>
+     <button type="submit">Submit</button>
+     <button type="button" id="clearButton">Clear</button>
+ </form>
+
+ <br>
+ <h2>Offical links</h2>
  <h5>
 <a href="https://entertopia.vercel.app" target="_blank">Entertopia.vercel.app</a>
 <br>
@@ -68,6 +77,8 @@ video {
 <a href=" " target="_blank"> </a>
 <br>
 
+<h2>Your links</h2>
+<div id="displayText"></div>
 
  </h5>
 </center>
@@ -82,4 +93,31 @@ video {
           channel: '1211576176607232004' // #general
       })
     </script>
+     <script>
+      const input = document.getElementById('userInput');
+      const display = document.getElementById('displayText');
+      const clearButton = document.getElementById('clearButton');
+
+      // Load saved text from local storage
+      window.onload = function() {
+          const savedText = localStorage.getItem('submittedText');
+          if (savedText) {
+              display.textContent = savedText; // Display the saved text
+          }
+      };
+
+      form.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          const userText = input.value; // Get the input value
+          display.textContent = userText; // Display the submitted text
+          localStorage.setItem('submittedText', userText); // Save the text to local storage
+          input.value = ''; // Clear the input field
+      });
+
+      // Clear button functionality
+      clearButton.addEventListener('click', function() {
+          display.textContent = ''; // Clear displayed text
+          localStorage.removeItem('submittedText'); // Remove text from local storage
+      });
+  </script>
 </html>
