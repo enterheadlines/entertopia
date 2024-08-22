@@ -222,7 +222,7 @@ hr{
 }
 
 #gamebutton{
-  background-color: #4d4d4d;
+  background-color: #3f3f3f;
   color: #ffffff;
 }
 #gamebutton:hover {
@@ -230,14 +230,14 @@ hr{
 }
 
 #gameback{
-	background-color: #4d4d4d;
+	background-color: #3f3f3f;
 	color: #ffffff;
   }
   #gameback:hover {
 	background-color: #5c5c5c;
   }
   #gamerefresh{
-	background-color: #4d4d4d;
+	background-color: #3f3f3f;
 	color: #ffffff;
   }
   #gamerefresh:hover {
