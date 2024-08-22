@@ -130,7 +130,7 @@ a::after{
 	border-radius: 20px;
 }
 #hide{
-   display: none;
+   font-size: small;
 }
 #search{
 	font-family: 'Press Start 2P';
