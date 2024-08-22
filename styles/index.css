@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap');
 
 body {
-	background: linear-gradient(to right, #333131, #474948, #636363, #373535, #404040);
+	background: linear-gradient(to right, #565252, #5c5f5e, #636363, #5c5a5a, #575252);
 	animation: gradient 15s ease infinite;
 	background-size: 400% 400%;
 	height: 100vh;
@@ -406,4 +406,5 @@ i{
 	object-fit: initial;
 	height: 200px;
 	width:230px;
+	border-radius: 10px;
 }
