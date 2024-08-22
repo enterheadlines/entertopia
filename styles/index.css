@@ -397,8 +397,9 @@ i{
   }
 #video{
 	flex-wrap: wrap;
-	margin:3px;
+	margin:10px;
 	display: flex;
+	padding:10px;
 }
 #videos{
 	object-fit: initial;
