@@ -400,7 +400,8 @@ i{
 	margin:3px;
 	display: flex;
 }
-videos{
+#videos{
+	object-fit: initial;
 	height: 200px;
 	width:230px;
 }
