@@ -395,3 +395,8 @@ i{
 	bottom: 15px;
 	margin-left: 20px;
   }
+#video{
+	flex-wrap: wrap;
+	margin:3px;
+	display: flex;
+}
