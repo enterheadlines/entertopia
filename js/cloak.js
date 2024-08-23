@@ -8,9 +8,7 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) {
-    alert('Make sure to check Credits and Policy')
-  } else {
+  
     const doc = popup.document
     const iframe = doc.createElement('iframe')
     const style = iframe.style
@@ -45,7 +43,7 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     `
     doc.head.appendChild(script)
   }
-}
+
 
 document.addEventListener('DOMContentLoaded', function (event) {
   if (window.localStorage.getItem('v4Particles') === 'true') {
