@@ -14,6 +14,7 @@ body {
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
 	animation: fadeInAnimation ease 1s;
+	animation: fadeOutAnimation ease 1s;
 }
 #navshi {
 	margin: 0px;
