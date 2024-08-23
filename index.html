@@ -53,6 +53,7 @@ video {
         <span><a href="index.html">Home</a>&nbsp;<a href="general/arcade.html">Arcade</a>&nbsp;<a href="/general/utilities.html">Utilities</a>&nbsp;<a href="/general/media.html">Media</a>&nbsp;<a href="/general/roms.html">ROMs</a>&nbsp;<a href="/general/extra.html">Extra</a><a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a></span>
       
       </div>
+      <a id="enter-button" class="enter-button">Make sure to read the Terms of condition before using this site</a>
       <div>
       <div id="devi">
       <center><h1>Entertopia</h1></center>
@@ -125,4 +126,35 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
     };
   }
 </script>
+<script>
+  let opacity = 0;
+  let fadeIn = true;
+  let delay = 0.007;
+  
+  function updateTitle() {
+  
+      if (fadeIn) {
+          opacity += delay;
+          if (opacity >= 1) {
+              fadeIn = false;
+          }
+      } else {
+          opacity -= delay;
+          if (opacity <= 0) {
+              fadeIn = true;
+          }
+      }
+  
+      requestAnimationFrame(updateTitle);
+  }
+      
+  document.getElementById('enter-button').addEventListener('click', function() {
+    let enterPopup = document.getElementById('enter-popup');
+      
+      enterPopup.style.display = 'none';
+      enterPopup.style.transition = 'all 0.3s ease';
+  
+      requestAnimationFrame(updateTitle);
+  });
+  </script>
 </html>
