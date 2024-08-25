@@ -21,7 +21,8 @@ body {
 	border-bottom: 3px;
 	border-bottom-color: white;
 	border-color:   rgb(58, 53, 58);
-	padding: 15px;
+	padding-left: 15px;
+	padding: 20px;
 	background-color: rgb(58, 53, 58);
     box-shadow: 0 0 10px   rgb(58, 53, 58);
 	backdrop-filter: blur(6px);
