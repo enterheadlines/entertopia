@@ -45,7 +45,7 @@ a {
     font-family:"Press Start 2P";
 	text-decoration: none;
 	color: white;
-	transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.3s, color 0.3s;
 
 }
 a:visited{
@@ -70,7 +70,7 @@ a:active{
 
 }
 a::after{
-	transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.3s, color 0.3s;
 }
 #image{
 	float: right;
