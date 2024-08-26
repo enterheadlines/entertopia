@@ -1,4 +1,6 @@
 # Entertopia
+Entertopia is a unblocked gaming website, currently hosting over 140 games, 23 apps and 63 ROMs.
+
 ## Features
  - 130+ Games
  - 50+ ROMs
