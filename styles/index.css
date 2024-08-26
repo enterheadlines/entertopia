@@ -81,12 +81,12 @@ a::after{
 	margin:1px;
 }
 .row{
-	margin: 3px;
+	margin: 2px;
 	display: flex;
     flex-wrap: wrap;
 }
 .column{
-	padding:7px;
+	padding:6px;
 }
 #button {
 	font-weight:900;
