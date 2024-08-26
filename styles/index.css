@@ -16,8 +16,7 @@ body {
 	animation: fadeInAnimation ease 1s;
 }
 #navshi {
-	position: fixed;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin: 30px;
 	border: 1px;
 	border-radius: 25px;
