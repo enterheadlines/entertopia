@@ -75,36 +75,40 @@ video {
 
 <br>
 <script>
-  ev.preventDefault();
+  async function sendContact(ev) {
+    ev.preventDefault();
 
-const senderEmail = document
-  .getElementById('emailInput').value;
-const senderMessage = document
-  .getElementById('messageInput').value;
+    const senderEmail = document
+      .getElementById('emailInput').value;
+    const senderMessage = document
+      .getElementById('messageInput').value;
 
-  const webhookBody = {
-  embeds: [{
-    title: 'Contact Form Submitted',
-    fields: [
-      { name: 'Sender', value: senderEmail },
-      { name: 'Message', value: senderMessage }
-    ]
-  }],
-};
-const webhookUrl = 'https://discord.com/api/webhooks/1277946667454173247/kblvghILUYBuTkzPMT1ETM2XHe98M3DiYtESxgGq1gXrRjd2IqiPeIMSw5qDA8F27RSn';
+    const webhookBody = {
+      embeds: [{
+        title: 'Contact Form Submitted',
+        fields: [
+          { name: 'Sender', value: senderEmail },
+          { name: 'Message', value: senderMessage }
+        ]
+      }],
+    };
 
-const response = await fetch(webhookUrl, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(webhookBody),
-});
-if (response.ok) {
-  alert('I have received your request!');
-} else {
-  alert('There was an error! Try again later!');
-}
+    const webhookUrl = 'https://discord.com/api/webhooks/1277946667454173247/kblvghILUYBuTkzPMT1ETM2XHe98M3DiYtESxgGq1gXrRjd2IqiPeIMSw5qDA8F27RSn';
+
+    const response = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(webhookBody),
+    });
+
+    if (response.ok) {
+      alert('I have received your message!');
+    } else {
+      alert('There was an error! Try again later!');
+    }
+  }
 </script>
 
 
