@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Music</title>
+       <title>Bob The Robber 2</title>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
        <meta name="author" content="Entertopia">
@@ -25,6 +25,12 @@
      
       
       <style>
+
+video {
+  width:600px;
+  margin-top:120px;
+  border-radius:5px;
+}
 .nav-btn {
 	position: relative;
 	border: none;
@@ -35,24 +41,7 @@
 	cursor: pointer;
 	text-decoration: none;
   }
-  .column{
-            border-style: solid;
-            border-radius: 5px;
-            padding: 15px;
-        }
-        .column {
-          background-color: rgb(126, 123, 123);
-            color: white;
-            border-color: azure;
-            border-style: solid;
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
-        .row{
-          margin: 10px;
-	display: flex;
-    flex-wrap: wrap;
-        }
+
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
@@ -64,59 +53,25 @@
       
       </div>
         </div>
+      
 <br>
-<center><h1>Entertopia Music</h1></center>
-<center><h3 id="splash">INFAMY</h3></center>
+
+<center><header><h1>Bob The Robber 2</h1></header></center>
+
+<iframe src="https://blazer-games-pi.vercel.app/games/bob-the-robber-2/" id="iframe" name="iframe" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" allowfullscreen></iframe>
 <br>
-<div class="row">
-  <div class="column">
-    <h6><figcaption>Inner Light</figcaption></h6>
-    <br>
-<audio controls>
-  <source src="/music/copy_33CA9D00-F9F6-423C-8923-5F57BB2C8CC7.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
-</div>
-&nbsp;
-<div class="column">
-  <h6><figcaption>Hekireki</figcaption></h6>
-  <br>
-<audio controls>
-<source src="/music/2C8F7EE0-D3FE-4671-A476-1398319DDB1D (1).mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
-</div>
-&nbsp;
-<div class="column">
-  <h6><figcaption>Lomando Theme song</figcaption></h6>
-  <br>
-<audio controls>
-<source src="/music/copy_A40B3103-0ACD-42DF-ABA5-8E5D59CFA8EB.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
-</div>
-&nbsp;
-<div class="column">
-  <h6><figcaption>Under star</figcaption></h6>
-  <br>
-<audio controls>
-<source src="/music/238DBB37-DE18-47AE-AE6C-EDAECE3B1BFD (1) (1).mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
-</div>
-</div>
 <br>
-    <center>More coming soon...</center>
+<center>
+<a onclick="toggleFullscreen()"><button id="gamebutton">Fullscreen</button></a>
+<a href="/general/arcade.html"><button id="gameback">Go back</button></a>
+<button onclick="refreshIframe()" id="gamerefresh">Refresh Iframe</button>
+</center>
+
+<br>
+
+
+
     </body>
-    <script>
-        let splashtext = [
-       'Web Music',
-       'Most of these are anime music',
-       'These took forever to download',
-     ]
-     
-     document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
-     </script>
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
       new Crate({
           server: '1211576175672172636', // Infamy Network
