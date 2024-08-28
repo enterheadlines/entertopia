@@ -220,6 +220,7 @@ hr{
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
+  box-shadow: 0 0 10px  #3f3f3f;
 }
 
 #gamebutton{
@@ -433,6 +434,7 @@ audio{
 	margin-bottom: 10px;
 	height:70px;
 	width:170px;
+	box-shadow: 0 0 10px  rgb(58, 53, 58);
   }
   #enter:hover{
 	background-color:  rgb(58, 53, 58);
