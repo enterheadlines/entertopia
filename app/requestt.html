@@ -41,7 +41,30 @@ video {
 	cursor: pointer;
 	text-decoration: none;
   }
-
+#emailInput{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 20px;
+  height: 80px;
+  width:330px;
+}
+#messageInput{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 20px;
+  height: 80px;
+  width:330px;
+}
+#forms{
+  text-align: center;
+}
+.btn btn-primary{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 10px;
+  height:30px;
+  width:40px;
+}
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
@@ -57,7 +80,7 @@ video {
 <br>
 
 <center><header><h1>Request</h1></header></center>
-<form onsubmit="sendContact(event)">
+<form onsubmit="sendContact(event)" id="forms">
   <div class="mb-3">
     <label for="emailInput" class="form-label">Whats the apps name</label>
     <input type="text" class="form-control" id="emailInput">
@@ -85,7 +108,7 @@ video {
 
     const webhookBody = {
       embeds: [{
-        title: 'Contact Form Submitted',
+        title: 'Suggestions',
         fields: [
           { name: 'Sender', value: senderEmail },
           { name: 'Message', value: senderMessage }
