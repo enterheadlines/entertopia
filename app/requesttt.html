@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Updatelog</title>
+       <title>Suggestions</title>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
        <meta name="author" content="Entertopia">
@@ -41,7 +41,30 @@ video {
 	cursor: pointer;
 	text-decoration: none;
   }
-
+#emailInput{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 20px;
+  height: 80px;
+  width:330px;
+}
+#messageInput{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 20px;
+  height: 80px;
+  width:330px;
+}
+#forms{
+  text-align: center;
+}
+#mom{
+  border: none;
+  background-color: rgb(189, 181, 181);
+  border-radius: 10px;
+  height:30px;
+  width:60px;
+}
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
@@ -55,55 +78,60 @@ video {
         </div>
       
 <br>
-<center>
-  <a href="/general/extra.html"><button id="enter">Music</button></a>
-    <ul>
-        <h1>Update log</h1>
-        <br>
-        <h2>V5</h2>
-        <h5><a href="https://entertopia.vercel.app" target="_blank">Link</a></h5>
-        <br>
-       <h3>Made the UI cleaner</h3>
-       <h3>Added ROMs</h3>
-       <h3>Added Ads</h3>
-       <h3>Added Stats</h3>
-       <br>
-       <h2>V4</h2>
-       <h5><a href="https://deepintheass.netlify.app" target="_blank">Link</a></h5>
-       <br>
-       <h3>rewrote the website code</h3>
-        <h3>added so much games and apps</h3>
-        <h3>added more pages</h3>
-        <h3>added a tab cloaker</h3>
-        <br>
-        <h2>V3</h2>
-        <h5><a href="#" target="_blank">Link(lost media)</a></h5>
-        <br>
-        <h3>Added more Games</h3>
-        <h3>Added more pages</h3>
-        <h3>Added proxy links to use</h3>
-        <br>
-        <h2>V2</h2>
-        <h5><a href="https://infamymainv2.vercel.app" target="_blank">Link</a></h5>
-        <br>
-        <h3>Added more games</h3>
-        <h3>Made the site more cleaner</h3>
-        <br>
-        <h2>V1</h2>
-        <h5><a href="https://infamymain.vercel.app" target="_blank">Link</a></h5>
-        <br>
-        <h3>Website starts development</h3>
-        <br>
-        <h2>Alpha</h2>
-        <h5><a href="https://infamyunblocked-v2.vercel.app/" target="_blank">Link</a></h5>
-        <br>
-        <h3>Added lots of games</h3>
-        <h3>Added utilities</h3>
-        <h3>added more css</h3>
-    </ul>
-</center>
-<br>
 
+<center><header><h1>Suggestions</h1></header></center>
+<br>
+<form onsubmit="sendContact(event)" id="forms">
+  <div class="mb-3">
+    <input type="text" class="form-control" id="emailInput" placeholder="Whats your suggestion">
+  </div>
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-primary" id="mom">Submit</button>
+</form>
+<br>
+<center>
+<a href="/general/utilities.html"><button id="gameback">Go back</button></a>
+</center>
+
+<br>
+<script>
+  async function sendContact(ev) {
+    ev.preventDefault();
+
+    const senderEmail = document
+      .getElementById('emailInput').value;
+    const senderMessage = document
+      .getElementById('messageInput').value;
+
+    const webhookBody = {
+      embeds: [{
+        title: 'Suggestions',
+        fields: [
+          { name: 'Sender', value: senderEmail },
+          { name: 'Message', value: senderMessage }
+        ]
+      }],
+    };
+
+    const webhookUrl = 'https://discord.com/api/webhooks/1277946667454173247/kblvghILUYBuTkzPMT1ETM2XHe98M3DiYtESxgGq1gXrRjd2IqiPeIMSw5qDA8F27RSn';
+
+    const response = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(webhookBody),
+    });
+
+    if (response.ok) {
+      alert('I have received your message!');
+    } else {
+      alert('There was an error! Try again later!');
+    }
+  }
+</script>
 
 
     </body>
