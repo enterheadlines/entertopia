@@ -88,6 +88,7 @@
       <div id="profile">
         <img id="pfp" src="/imgs/defaultprofile.png" alt="Profile Picture">
         <h2 id="name">User</h2>
+        <p id="bio">This is the default bio.</p>
         <input type="text" id="nameInput" placeholder="Enter new name">
         <button onclick="changeName()">Change Name</button>
         <br>
@@ -96,13 +97,25 @@
         <button onclick="changePfp()">Change Profile Picture</button>
         <br>
         <br>
+        <input type="text" id="bioInput" placeholder="Enter new bio">
+        <button onclick="changeBio()">Change Bio</button>
+        <br>
+        <br>
         <br>
     </div>
+    <br>
+    <center>
+        <a href="/general/arcade.html"><button id="buttonass">Arcade</button></a>
+        <a href="/general/utilities.html"><button id="buttonass">Utilities</button></a>
+        <a href="/general/media.html"><button id="buttonass">Media</button></a>
+        <a href="/general/roms.html"><button id="buttonass">ROMs</button></a>
+    </center>
     <script>
         // Load saved profile data from localStorage
         window.onload = function() {
             const savedName = localStorage.getItem('profileName');
             const savedPfp = localStorage.getItem('profilePfp');
+            const savedBio = localStorage.getItem('profileBio');
 
             if (savedName) {
                 document.getElementById('name').innerText = savedName;
@@ -111,6 +124,10 @@
             if (savedPfp) {
                 document.getElementById('pfp').src = savedPfp;
                 document.getElementById('pfpInput').value = savedPfp;
+            }
+            if (savedBio) {
+                document.getElementById('bio').innerText = savedBio;
+                document.getElementById('bioInput').value = savedBio;
             }
         };
 
@@ -125,7 +142,14 @@
             document.getElementById('pfp').src = newPfp;
             localStorage.setItem('profilePfp', newPfp); // Save profile picture URL to localStorage
         }
+
+        function changeBio() {
+            const newBio = document.getElementById('bioInput').value;
+            document.getElementById('bio').innerText = newBio;
+            localStorage.setItem('profileBio', newBio); // Save bio to localStorage
+        }
     </script>
+
       <br>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
   new Crate({
