@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Suggestions</title>
+       <title>Scream</title>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
        <meta name="author" content="Entertopia">
@@ -41,33 +41,7 @@ video {
 	cursor: pointer;
 	text-decoration: none;
   }
-#emailInput{
-    box-shadow: 0 0 10px  rgb(189, 181, 181);
-  border: none;
-  background-color: rgb(189, 181, 181);
-  border-radius: 20px;
-  height: 80px;
-  width:330px;
-}
-#messageInput{
-    box-shadow: 0 0 10px  rgb(189, 181, 181);
-  border: none;
-  background-color: rgb(189, 181, 181);
-  border-radius: 20px;
-  height: 80px;
-  width:330px;
-}
-#forms{
-  text-align: center;
-}
-#mom{
-    box-shadow: 0 0 10px  rgb(189, 181, 181);
-  border: none;
-  background-color: rgb(189, 181, 181);
-  border-radius: 10px;
-  height:30px;
-  width:60px;
-}
+
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
@@ -82,55 +56,19 @@ video {
       
 <br>
 
-<center><header><h1>Suggestions</h1></header></center>
+<center><header><h1>Scream</h1></header></center>
+
+<iframe src="https://multiembed.mov/?video_id=4232&tmdb=1" id="iframe" name="iframe" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" allowfullscreen></iframe>
 <br>
-<form onsubmit="sendContact(event)" id="forms">
-  <div class="mb-3">
-    <input type="text" class="form-control" id="emailInput" placeholder="Whats your suggestion">
-  </div>
-  <br>
-  <br>
-  <button type="submit" class="btn btn-primary" id="mom">Submit</button>
-</form>
 <br>
 <center>
-<a href="/general/utilities.html"><button id="gameback">Go back</button></a>
+<a onclick="toggleFullscreen()"><button id="gamebutton">Fullscreen</button></a>
+<a href="/general/arcade.html"><button id="gameback">Go back</button></a>
+<button onclick="refreshIframe()" id="gamerefresh">Refresh Iframe</button>
 </center>
 
 <br>
-<script>
-  async function sendContact(ev) {
-    ev.preventDefault();
 
-    const senderEmail = document
-      .getElementById('emailInput').value;
-
-    const webhookBody = {
-      embeds: [{
-        title: 'Suggestions',
-        fields: [
-          { name: 'Sender', value: senderEmail },
-        ]
-      }],
-    };
-
-    const webhookUrl = 'https://discord.com/api/webhooks/1277946667454173247/kblvghILUYBuTkzPMT1ETM2XHe98M3DiYtESxgGq1gXrRjd2IqiPeIMSw5qDA8F27RSn';
-
-    const response = await fetch(webhookUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(webhookBody),
-    });
-
-    if (response.ok) {
-      alert('I have received your message!');
-    } else {
-      alert('There was an error! Try again later!');
-    }
-  }
-</script>
 
 
     </body>
