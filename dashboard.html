@@ -23,8 +23,11 @@
             background-color: rgb(115, 115, 115);
             text-align: center;
             box-shadow: 0 0 10px  rgb(58, 53, 58);
-            padding: 10px;
-            margin: 300px;
+            padding: 20px;
+            margin-left: 300px;
+            margin-bottom: 300px;
+            margin-right: 300px;
+            margin-top: 20px;
         }
        </style>
          <!-- Google tag (gtag.js) -->
@@ -92,20 +95,9 @@
         <input type="text" id="pfpInput" placeholder="Enter new image URL">
         <button onclick="changePfp()">Change Profile Picture</button>
         <br>
+        <br>
+        <br>
     </div>
-    <center>
-        <h3>
-        <a href="/general/arcade.html"><button id="enter">Arcade</button></a>
-        <a href="/general/utilities.html"><button id="enter">Utilities</button></a>
-        <a href="/general/media.html"><button id="enter">Media</button></a>
-        <a href="/general/roms.html"><button id="enter">ROMs</button></a>
-        <a href="/general/extra.html"><button id="enter">Extra</button></a>
-        </h3>
-    </center>
-<br>
-<center>
-    <a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a>
-</center>
     <script>
         // Load saved profile data from localStorage
         window.onload = function() {
