@@ -440,3 +440,14 @@ audio{
 	background-color:  rgb(58, 53, 58);
 	transform: scale(1.1);
   }
+
+  #iimg {
+	height: auto;
+	max-height: 218px;
+	width: 145px;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+	border-radius: 25px;
+	max-width: 145px;
+  }
