@@ -12,6 +12,20 @@
        <script src="js/fullscreen.js"></script>
      <script src="js/movies.php"></script>
        <script src="js/cloak.js"></script>
+       <style>
+        #pfp{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+        #profile{
+            border-radius: 30px;
+            background-color: rgb(115, 115, 115);
+            text-align: center;
+            box-shadow: 0 0 10px  rgb(58, 53, 58);
+            padding: 10px;
+        }
+       </style>
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
 <script>
@@ -43,7 +57,7 @@
       <br>
       <div id="profile">
         <img id="pfp" src="/imgs/defaultprofile.png" alt="Profile Picture">
-        <h2 id="name"></h2>
+        <h2 id="name">User</h2>
         <input type="text" id="nameInput" placeholder="Enter new name">
         <button onclick="changeName()">Change Name</button>
         <br>
