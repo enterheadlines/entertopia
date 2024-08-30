@@ -26,7 +26,16 @@
             padding: 20px;
             margin-left: 20px;
             margin-bottom: 10px;
-            margin-right: 300px;
+            margin-right: 550px;
+            margin-top: 20px;
+        }
+        #quicklinks{
+            border-radius: 30px;
+            background-color: rgb(115, 115, 115);
+            text-align: center;
+            box-shadow: 0 0 10px  rgb(58, 53, 58);
+            padding: 20px;
+            margin-bottom: 20px;
             margin-top: 20px;
         }
        </style>
@@ -85,6 +94,7 @@
       </div>
       <br>
       <br>
+      <div class="row">
       <div id="profile">
         <img id="pfp" src="/imgs/defaultprofile.png" alt="Profile Picture">
         <h2 id="name">User</h2>
@@ -197,7 +207,7 @@
             localStorage.setItem('profileBio', newBio); // Save bio to localStorage
         }
     </script>
-
+</div>
       <br>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
   new Crate({

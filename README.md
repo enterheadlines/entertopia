@@ -12,6 +12,7 @@ Entertopia is a unblocked gaming website, currently hosting over 140 games, 23 a
  - Developed by Infamy/enterheadlines
  - Most games by 3kh0
  - ROMs by Vimms lair
+ - JS code by AI
 ## Other
 If u have any questions or suggestions, join our discord server
 https://discord.gg/WSUy3dHFRh

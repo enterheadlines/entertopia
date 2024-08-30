@@ -126,6 +126,7 @@ a::after{
   }
 #img{
 	padding:5px;
+	padding-bottom: 20px;
 	height: 90px;
 	width: 90px;
 	border-radius: 20px;
