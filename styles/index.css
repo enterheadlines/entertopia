@@ -91,7 +91,7 @@ a::after{
 #button {
 	font-weight:900;
     font-family:"Press Start 2P";
-	padding:20px;
+	padding:10px;
 	padding-bottom: 20px;
 	font-size: 18px;
   background-color:  rgb(58, 53, 58);
@@ -127,8 +127,8 @@ a::after{
   }
 #img{
 	
-	height: 150px;
-	width: 150px;
+	height: 130px;
+	width: 130px;
 	border-radius: 20px;
 }
 #hide{
