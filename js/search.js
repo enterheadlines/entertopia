@@ -1,7 +1,12 @@
+document.getElementById('search').addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const games = document.querySelectorAll('.row > #dock');
 
-function search() {
-    const input = document.getElementById("search").value.toLowerCase();
-    document.querySelectorAll('.row').forEach(dock => 
-    dock.style.display = (dock.querySelector('p')?.innerText.toLowerCase().includes(input)) ? "" : "none"
-    );
-    }
+    games.forEach(game => {
+        if (game.textContent.toLowerCase().includes(filter)) {
+            game.classList.remove('hidden');
+        } else {
+            game.classList.add('hidden');
+        }
+    });
+});
