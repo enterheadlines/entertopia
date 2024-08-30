@@ -1,26 +1,19 @@
-const toggleButton = document.getElementById('toggleButton');
-const searchContainer = document.getElementById('searchContainer');
-const searchInput = document.getElementById('searchInput');
-const searchButton = document.getElementById('searchButton');
-const names = document.querySelectorAll('.name');
+const searchbar = document.querySelector(".search");
+const gamediv = document.querySelector(".row");
+const games = gamediv.querySelectorAll(".dock")
 
-// Toggle the search bar visibility
-toggleButton.addEventListener('click', () => {
-    searchContainer.classList.toggle('hidden');
-});
+searchbar.addEventListener("input", search);
 
-// Search and filter names
-searchButton.addEventListener('click', () => {
-    const query = searchInput.value.toLowerCase();
+function search() {
+  const searchQuery = searchbar.value.trim().toLowerCase();
 
-    names.forEach(name => {
-        if (name.textContent.toLowerCase().includes(query)) {
-            name.style.display = 'block'; // Show matching name
-        } else {
-            name.style.display = 'none'; // Hide non-matching name
-        }
-    });
+  games.forEach((game) => {
+    const gameName = game.textContent.toLowerCase();
+    if (gameName.includes(searchQuery)) {
+      game.style.display = "block";
+    } else {
+      game.style.display = "none";
+    }
+  });
+}
 
-    // Clear the input field after searching
-    searchInput.value = '';
-});
