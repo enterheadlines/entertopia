@@ -125,14 +125,14 @@ a::after{
 	}
   }
 #img{
-	padding:5px;
-	padding-bottom: 20px;
+	padding:20px;
+	padding-bottom: 60px;
 	height: 90px;
 	width: 90px;
 	border-radius: 20px;
 }
 #hide{
-  display: none;
+  font-size: xx-small;
 }
 #search{
 	font-family: 'Press Start 2P';
