@@ -2,7 +2,7 @@ const searchInput = document.getElementById('search');
 
 function filterGames() {
     const filter = searchInput.value.toLowerCase();
-    const games = document.querySelectorAll('.row > .column');
+    const games = document.querySelectorAll('.column > .row');
 
     games.forEach(game => {
         if (game.textContent.toLowerCase().includes(filter)) {
