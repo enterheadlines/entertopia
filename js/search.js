@@ -1,5 +1,7 @@
-document.getElementById('search').addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
+const searchInput = document.getElementById('search');
+
+function filterGames() {
+    const filter = searchInput.value.toLowerCase();
     const games = document.querySelectorAll('.row > .column');
 
     games.forEach(game => {
@@ -9,4 +11,7 @@ document.getElementById('search').addEventListener('input', function() {
             game.classList.add('hidden');
         }
     });
-});
+}
+
+// Setting up DOM manipulation for input changes
+searchInput.oninput = filterGames;
