@@ -24,8 +24,8 @@
             text-align: center;
             box-shadow: 0 0 10px  rgb(58, 53, 58);
             padding: 20px;
-            margin-left: 300px;
-            margin-bottom: 300px;
+            margin-left: 20px;
+            margin-bottom: 10px;
             margin-right: 300px;
             margin-top: 20px;
         }
@@ -104,12 +104,60 @@
         <br>
     </div>
     <br>
-    <center>
-        <a href="/general/arcade.html"><button id="buttonass">Arcade</button></a>
-        <a href="/general/utilities.html"><button id="buttonass">Utilities</button></a>
-        <a href="/general/media.html"><button id="buttonass">Media</button></a>
-        <a href="/general/roms.html"><button id="buttonass">ROMs</button></a>
-    </center>
+    <div id="quicklinks">
+      <h1>Link List Manager</h1>
+      <input type="text" id="linkInput" placeholder="Enter a link">
+      <button onclick="addLink()">Add Link</button>
+  </div>
+  <ul id="linkList"></ul>
+
+  <script>
+      // Load saved links from localStorage when the page loads
+      window.onload = function() {
+          const savedLinks = JSON.parse(localStorage.getItem('links')) || [];
+          savedLinks.forEach(link => {
+              addLinkToList(link);
+          });
+      };
+
+      function addLink() {
+          const linkInput = document.getElementById('linkInput');
+          const linkValue = linkInput.value;
+
+          if (linkValue) {
+              // Save the new link to localStorage
+              const currentLinks = JSON.parse(localStorage.getItem('links')) || [];
+              currentLinks.push(linkValue);
+              localStorage.setItem('links', JSON.stringify(currentLinks));
+
+              // Add the link to the list
+              addLinkToList(linkValue);
+
+              // Clear the input field
+              linkInput.value = '';
+          } else {
+              alert('Please enter a valid link.');
+          }
+      }
+
+      function addLinkToList(linkValue) {
+          // Create a new list item
+          const li = document.createElement('li');
+          const link = document.createElement('a');
+          
+          // Set the link attributes
+          link.href = linkValue;
+          link.innerText = linkValue;
+          link.target = "_blank"; // Open link in a new tab
+
+          // Append the link to the list item
+          li.appendChild(link);
+          // Append the list item to the link list
+          document.getElementById('linkList').appendChild(li);
+      }
+  </script>
+    </div>
+
     <script>
         // Load saved profile data from localStorage
         window.onload = function() {
