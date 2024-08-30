@@ -108,7 +108,6 @@ a::after{
   display: inline;
   margin: 0px;
   margin-bottom: 10px;
-  overflow-x: scroll;
   text-overflow: ellipsis;
   height: 190px;
   width: 150px;
