@@ -109,7 +109,9 @@ a::after{
   margin: 0px;
   margin-bottom: 10px;
   overflow-x: scroll;
-  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 150px;
+  width: 190px;
   }
   #button:hover {
   background-color:  rgb(58, 53, 58);

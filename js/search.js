@@ -1,19 +1,14 @@
-const searchbar = document.querySelector(".search");
-const gamediv = document.querySelector(".row");
-const games = gamediv.querySelectorAll(".dock")
-
-searchbar.addEventListener("input", search);
-
-function search() {
-  const searchQuery = searchbar.value.trim().toLowerCase();
-
-  games.forEach((game) => {
-    const gameName = game.textContent.toLowerCase();
-    if (gameName.includes(searchQuery)) {
-      game.style.display = "block";
-    } else {
-      game.style.display = "none";
+function filterNames() {
+    const input = document.getElementById('search');
+    const filter = input.value.toLowerCase();
+    const names = document.getElementsByClassName('dock');
+    
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i].getAttribute('data-name').toLowerCase();
+        if (name.includes(filter)) {
+            names[i].style.display = ""; // Show the div
+        } else {
+            names[i].style.display = "none"; // Hide the div
+        }
     }
-  });
 }
-
