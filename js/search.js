@@ -1,6 +1,6 @@
 document.getElementById('search').addEventListener('input', function() {
     const filter = this.value.toLowerCase();
-    const games = document.querySelectorAll('.row > #dock');
+    const games = document.querySelectorAll('.row > .dock');
 
     games.forEach(game => {
         if (game.textContent.toLowerCase().includes(filter)) {
