@@ -12,6 +12,94 @@
        <script src="js/fullscreen.js"></script>
      <script src="js/movies.php"></script>
        <script src="js/cloak.js"></script>
+       <style>
+            .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+            display: none; /* Hidden by default */
+        }
+        .popup {
+            background-color: #2c2c2c;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        .popup h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+        .popup p {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        .popup-buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .popup-buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+        .popup-buttons a:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .popup-buttons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-out;
+            z-index: -1;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: right;
+        }
+        .popup-buttons a:hover::before {
+            transform: translateX(-50%) scaleX(1);
+            transform-origin: left;
+        }
+        .popup-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: #aaa;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .popup-buttons button:hover {
+            background-color: #888;
+            transform: translateY(-2px);
+        }
+
+        </style>
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
 <script>
@@ -58,6 +146,15 @@
      <a href="https://github.com/enterheadlines/entertopia" target="_blank">Github</a>
      <a href="https://discord.gg/WSUy3dHFRh" target="_blank">Discord</a>
    </div>
+   <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+        <h2>Welcome to Entertopia</h2>
+        <p>Make sure to check the Credits and Policy</p>
+        <div class="popup-buttons">
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+</div>
     </body>
 <script>
    let splashtext = [
@@ -148,4 +245,16 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
 <script>
   alert[("Make sure to check Credits and policy")]
 </script>
+<script>
+   // Show popup
+   const popupOverlay = document.getElementById('popupOverlay');
+    popupOverlay.style.display = 'flex';
+
+    // Close popup
+    const closePopupButton = document.getElementById('closePopup');
+    closePopupButton.addEventListener('click', function() {
+        popupOverlay.style.display = 'none';
+    });
+});
+  </script>
 </html>
