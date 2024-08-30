@@ -453,3 +453,6 @@ audio{
 	border-radius: 25px;
 	max-width: 145px;
   }
+  .hidden {
+	display: none;
+}
