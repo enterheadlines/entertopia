@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Credit</title>
+       <title>AI</title>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
        <meta name="author" content="Entertopia">
@@ -25,12 +25,6 @@
      
       
       <style>
-
-video {
-  width:600px;
-  margin-top:120px;
-  border-radius:5px;
-}
 .nav-btn {
 	position: relative;
 	border: none;
@@ -41,7 +35,32 @@ video {
 	cursor: pointer;
 	text-decoration: none;
   }
-
+#enter{
+  font-weight:900;
+    font-family:"Press Start 2P";
+	padding:0px;
+	font-size: 18px;
+  background-color:  rgb(58, 53, 58);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgb(58, 53, 58);
+  text-decoration: none;
+  display: inline;
+  margin: 0px;
+  margin-bottom: 10px;
+  height:70px;
+  width:170px;
+}
+#enter:hover{
+  background-color:  rgb(58, 53, 58);
+  transform: scale(1.1);
+}
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
@@ -49,36 +68,32 @@ video {
     </head>
     <body>
       <div id="navshi">
-        <span><a href="/index.html">Home</a>&nbsp;<a href="/general/arcade.html">Arcade</a>&nbsp;<a href="/general/utilities.html">Utilities</a>&nbsp;<a href="/general/media.html">Media</a>&nbsp;<a href="/general/roms.html">ROMs</a>&nbsp;<a href="/general/extra.html">Extra</a>&nbsp;<a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a></span>
+        <span><a href="/index.html">Home</a>&nbsp;<a href="/general/arcade.html">Arcade</a>&nbsp;<a href="/general/utilities.html">Utilities</a>&nbsp;<a href="/general/media.html">Media</a>&nbsp;<a href="/general/roms.html">ROMs</a>&nbsp;<a href="/general/extra.html">Extra</a><a class="nav-btn" id="time" style="display: right; float: right; margin:0px; padding:0px;">00:00PM</a></span>
       
       </div>
         </div>
-      
+<br>
+<center><h1>Entertopia AI</h1></center>
+<center><h3 id="splash">INFAMY</h3></center>
+<br>
 <br>
 <center>
-    <ul>
-        <h1>Credits</h1>
-        <br>
-        <h2>Developed by Infamy/Enterheadlines</h2>
-        <h2>Most games by <a href="https://3kh0.net" target="_blank">3kh0</a></h2>
-        <h2>ROMs by <a href="https://vimm.net/vault" target="_blank">Vimms lair</a></h2>
-        <h2>Lots of js code by <a href="https://you.com" target="_blank">AI</a></h2>
-        <h2>All apps featured on this site are the property of their respective owners</h2>
-    </ul>
-    <br>
-    <ul>
-      <h1>Honorable Mention</h1>
-      <br>
-      <h2><a href="https://discord.com/users/1118732605165146144" target="_blank">Devi</a></h2>
-      <h2><a href="https://discord.com/users/962166232507900006" target="_blank">Pimmllery</a></h2>
-      <h2></h2>
-  </ul>
+<a href="/ai/mathai.html"><button id="enter">Math AI</button></a>
+<a href="/ai/jokeai.html"><button id="enter">Jokes AI</button></a>
+<a href="/ai/chatbot.html"><button id="enter">Chat AI</button></a>
+<a href="/ai/unblockai.html"><button id="enter">Unblock AI</button></a>
 </center>
 <br>
-
-
-
     </body>
+    <script>
+        let splashtext = [
+       'This is not even considered ai',
+       'basically a chatbot',
+       'this ai chatbot was made by ai',
+     ]
+     
+     document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
+     </script>
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
       new Crate({
           server: '1211576175672172636', // Infamy Network

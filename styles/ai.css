@@ -1,0 +1,36 @@
+#chatbox {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+#userInput {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#sendButton {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sendButton:hover {
+    background-color: #0056b3;
+}
+.user-message {
+    text-align: right;
+    color: #007BFF;
+    margin: 5px 0;
+}
+.ai-message {
+    text-align: left;
+    color: #333;
+    margin: 5px 0;
+}
