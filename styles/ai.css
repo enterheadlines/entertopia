@@ -36,4 +36,8 @@
 }
 #aiai{
     text-align: center;
+    align-items: center;
+}
+li{
+    display: none;
 }
