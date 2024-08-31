@@ -75,32 +75,18 @@
       </div>
         </div>
 <br>
-<div id="aiai">
-<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Unblock AI</h1>
-    <div id="chatbox"></div>
-    <input type="text" id="userInput" placeholder="Type your math question..." />
-    <br>
-    <button id="sendButton" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Send</button>
+
+<center><header><h1>Unblock AI</h1></header></center>
+
+<iframe src="/local-app/unblockai.html" id="iframe" name="iframe" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" allowfullscreen></iframe>
 <br>
-<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Before you use it</h1>
-<ul>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Only use the commands below this message</li>
-</ul>
 <br>
-<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Commands</h1>
-<ul>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">blocked website</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">educational resources</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">vpn</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">ask teacher</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">homework help</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">youtube</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">google classroom</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">social media</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">bypass restrictions</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">troubleshooting</li>
-</ul>
-</div>
+<center>
+<a onclick="toggleFullscreen()"><button id="gamebutton">Fullscreen</button></a>
+<a href="/general/ai.html"><button id="gameback">Go back</button></a>
+<button onclick="refreshIframe()" id="gamerefresh">Refresh Iframe</button>
+</center>
+<br>
     </body>
     <script>
         let splashtext = [

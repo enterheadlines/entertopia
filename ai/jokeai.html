@@ -74,19 +74,18 @@
       </div>
         </div>
 <br>
-<div id="aiai">
-<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Joke AI</h1>
-    <div id="chatbox" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></div>
-    <input type="text" id="userInput" placeholder="Type 'joke' for a random joke..."  style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-    <br>
-    <button id="sendButton" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Send</button>
+
+<center><header><h1>Joke AI</h1></header></center>
+
+<iframe src="/local-app/jokeai.html" id="iframe" name="iframe" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" allowfullscreen></iframe>
 <br>
-<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Before you use it</h1>
-<ul>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">type joke to use the bot</li>
-    <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The bot can only make jokes</li>
-</ul>
-</div>
+<br>
+<center>
+<a onclick="toggleFullscreen()"><button id="gamebutton">Fullscreen</button></a>
+<a href="/general/ai.html"><button id="gameback">Go back</button></a>
+<button onclick="refreshIframe()" id="gamerefresh">Refresh Iframe</button>
+</center>
+<br>
     </body>
     <script>
         let splashtext = [
