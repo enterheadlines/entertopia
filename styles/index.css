@@ -499,15 +499,19 @@ audio{
 select{
 	background-color: #333;
 	border: none;
-	border-radius: 30px;
+	color: white;
+	border-radius: 5px;
 	box-shadow: 0 0 10px#333;
-	font-family: "Press Start 2P";
+	font-family: 'Montserrat', sans-serif;
 	height: 50px;
 	width: 150px;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 option{
+	color: white;
 	background-color: #333;
 	border: none;
-	font-family: "Press Start 2P";
+	font-family: 'Montserrat', sans-serif;
 }

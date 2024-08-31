@@ -86,6 +86,60 @@
   background-color:  rgb(58, 53, 58);
   transform: scale(1.1);
 }
+#nameInput{
+  display: flex;
+	justify-content: center;
+	padding: 20px;
+  box-shadow: 0 0 10px#333;
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #333;
+	color: #ffffff;
+}
+#pfpInput{
+  display: flex;
+	justify-content: center;
+	padding: 20px;
+  box-shadow: 0 0 10px#333;
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #333;
+	color: #ffffff;
+}
+#bioInput{
+  display: flex;
+	justify-content: center;
+	padding: 20px;
+  box-shadow: 0 0 10px#333;
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #333;
+	color: #ffffff;
+}
+#kayes{
+  box-shadow: 0 0 10px#333;
+	padding: 10px 20px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #ffffff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+#kayes:hover{
+	background-color: #606060;
+}
 
        </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
@@ -105,15 +159,15 @@
         <h2 id="name">User</h2>
         <p id="bio">This is the default bio.</p>
         <input type="text" id="nameInput" placeholder="Enter new name">
-        <button onclick="changeName()">Change Name</button>
+        <button onclick="changeName()" id="kayes">Change Name</button>
         <br>
         <br>
         <input type="text" id="pfpInput" placeholder="Enter new image URL">
-        <button onclick="changePfp()">Change Profile Picture</button>
+        <button onclick="changePfp()" id="kayes">Change Profile Picture</button>
         <br>
         <br>
         <input type="text" id="bioInput" placeholder="Enter new bio">
-        <button onclick="changeBio()">Change Bio</button>
+        <button onclick="changeBio()" id="kayes">Change Bio</button>
         <br>
         <br>
         <br>
