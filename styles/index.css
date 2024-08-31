@@ -16,7 +16,7 @@ body {
 	animation: fadeInAnimation ease 1s;
 }
 #navshi {
-	font-size: xx-small;
+	font-size: medium;
 	margin: 0px;
 	border: 1px;
 	border-bottom: 3px;
@@ -435,8 +435,8 @@ audio{
 	display: inline;
 	margin: 0px;
 	margin-bottom: 10px;
-	height:70px;
-	width:170px;
+	height:90px;
+	width:190px;
 	box-shadow: 0 0 10px  rgb(58, 53, 58);
   }
   #enter:hover{

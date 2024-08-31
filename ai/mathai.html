@@ -2,12 +2,12 @@
 <html>
     <head>
        <title>Math AI</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
        <meta name="description" content="Free online games at Entertopia">
        <meta name="keywords" content="Unblocked, proxy, unblock, games, entertopia">
        <meta name="author" content="Entertopia">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <script src="/js/fullscreen.js"></script>
-       <script src="/js/mathai.js"></script>
        <link rel="stylesheet" href="/styles/ai.css">
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
@@ -75,6 +75,7 @@
       </div>
         </div>
 <br>
+<div id="aiai">
 <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Math AI</h1>
     <div id="chatbox"></div>
     <input type="text" id="userInput" placeholder="Type your math question..." />
@@ -86,6 +87,7 @@
     <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">It can handle Advanced math questions</li>
     <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The bot can only answer math questions</li>
 </ul>
+</div>
     </body>
     <script>
         let splashtext = [
@@ -103,3 +105,47 @@
       })
     </script>
 </html>
+<script src="/js/mathai.js"></script>
+<script>
+    //https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js
+
+const chatbox = document.getElementById('chatbox');
+        const userInput = document.getElementById('userInput');
+        const sendButton = document.getElementById('sendButton');
+
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function sendMessage() {
+            const userMessage = userInput.value;
+            if (userMessage.trim() === "") return;
+
+            appendMessage(userMessage, 'user');
+            userInput.value = '';
+
+            // Process the user's message
+            processMessage(userMessage);
+        }
+
+        function appendMessage(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+            messageDiv.className = sender === 'user' ? 'user-message' : 'ai-message';
+            chatbox.appendChild(messageDiv);
+            chatbox.scrollTop = chatbox.scrollHeight; // Scroll to the bottom
+        }
+
+        function processMessage(message) {
+            try {
+                // Evaluate the mathematical expression
+                const result = math.evaluate(message);
+                appendMessage(`Result: ${result}`, 'ai');
+            } catch (error) {
+                appendMessage("I couldn't understand that. Please try a different math expression.", 'ai');
+            }
+        }
+</script>
