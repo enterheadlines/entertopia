@@ -42,6 +42,7 @@ function getAIResponse(userMessage) {
 
     const responses = {
         // Sample predefined responses
+        "hi": "Hi there! How can i assist you today?",
         "hello": "Hi there! How can I assist you today?",
         "how are you?": "I'm just a program, but thanks for asking!",
         "what is your name?": "I'm a simple AI chatbot.",
@@ -58,7 +59,7 @@ function getAIResponse(userMessage) {
         // More predefined questions
         "whats your purpose?": "I'm here to assist and provide information.",
         "can you sing?": "I can't sing, but I can tell you about music!",
-        "what's your favorite movie?": "I don't watch movies, but I've heard great things about 'Inception'.",
+        "whats your favorite movie?": "I don't watch movies, but I've heard great things about 'Inception'.",
         "tell me about yourself": "I'm an AI created to assist with various questions.",
         "what's your favorite book?": "I don't read books, but I can recommend some!",
         "do you sleep?": "I don't sleep; I'm available 24/7!",

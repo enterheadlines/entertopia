@@ -119,58 +119,10 @@
         <br>
     </div>
     <br>
-    <div id="quicklinks">
-      <h1>Link List Manager</h1>
-      <input type="text" id="linkInput" placeholder="Enter a link">
-      <button onclick="addLink()">Add Link</button>
-  </div>
-  <ul id="linkList"></ul>
+  
 
-  <script>
-      // Load saved links from localStorage when the page loads
-      window.onload = function() {
-          const savedLinks = JSON.parse(localStorage.getItem('links')) || [];
-          savedLinks.forEach(link => {
-              addLinkToList(link);
-          });
-      };
 
-      function addLink() {
-          const linkInput = document.getElementById('linkInput');
-          const linkValue = linkInput.value;
-
-          if (linkValue) {
-              // Save the new link to localStorage
-              const currentLinks = JSON.parse(localStorage.getItem('links')) || [];
-              currentLinks.push(linkValue);
-              localStorage.setItem('links', JSON.stringify(currentLinks));
-
-              // Add the link to the list
-              addLinkToList(linkValue);
-
-              // Clear the input field
-              linkInput.value = '';
-          } else {
-              alert('Please enter a valid link.');
-          }
-      }
-
-      function addLinkToList(linkValue) {
-          // Create a new list item
-          const li = document.createElement('li');
-          const link = document.createElement('a');
-          
-          // Set the link attributes
-          link.href = linkValue;
-          link.innerText = linkValue;
-          link.target = "_blank"; // Open link in a new tab
-
-          // Append the link to the list item
-          li.appendChild(link);
-          // Append the list item to the link list
-          document.getElementById('linkList').appendChild(li);
-      }
-  </script>
+    
     </div>
 
     <script>
