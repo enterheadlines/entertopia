@@ -21,10 +21,9 @@ function toggleFullscreen() {
 console.log("ENTERTOPIA")
 
 
+let panicKey = 'Escape'; // Default panic key
 
-let panicKey = '.'; // Default panic key
-
-document.getElementById('changeButton').addEventListener('click', function() {
+function changeTitleAndFavicon() {
     // Get the input values
     const newTitle = document.getElementById('titleInput').value;
     const newFavicon = document.getElementById('faviconInput').value;
@@ -39,11 +38,11 @@ document.getElementById('changeButton').addEventListener('click', function() {
     // Update the panic key
     panicKey = document.getElementById('panicKeyInput').value.trim() || 'Escape';
     alert(`Panic key set to: ${panicKey}`);
-});
+}
 
 // Add event listener for the panic key
-document.addEventListener('keydown', function(event) {
+document.onkeydown = function(event) {
     if (event.key === panicKey) {
         window.location.href = 'https://www.google.com';
     }
-});
+};
