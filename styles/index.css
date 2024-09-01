@@ -387,6 +387,12 @@ i{
 }
 #stat-counter {
 	text-align: center;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+  }
+  #statt-counter {
+	text-align: center;
 	position: fixed;
 	bottom: 8px;
 	width: 100%;
