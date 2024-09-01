@@ -13,7 +13,7 @@ body {
     color: white;
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
-	animation: fadeInAnimation ease 1s;
+	animation: fadeInAnimation ease 1.5s;
 }
 #navshi {
 	font-size:15px;
