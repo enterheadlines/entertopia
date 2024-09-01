@@ -35,7 +35,7 @@
             width: 90%;
         }
         .popup h2 {
-            color: #4caf50;
+            color: #696c69;
             margin-bottom: 20px;
         }
         .popup p {
@@ -50,7 +50,7 @@
             margin: 0 10px;
             padding: 10px 20px;
             border-radius: 30px;
-            background-color: #4caf50;
+            background-color: #7f8980;
             color: #ffffff;
             text-decoration: none;
             font-size: 16px;
@@ -63,7 +63,7 @@
             position: relative;
         }
         .popup-buttons a:hover {
-            background-color: #45a049;
+            background-color: #7a7a7a;
             transform: translateY(-2px);
         }
         .popup-buttons a::before {
@@ -243,9 +243,7 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
     };
   }
 </script>
-<script>
-  alert("The site is still in development so if things are broken im prob gonna fix it later");
-</script>
+
 <script>
    document.addEventListener('DOMContentLoaded', function() {
     const splashTexts = [
@@ -261,10 +259,7 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
         "This took 1 month to make."
     ];
 
-    const splashTextElement = document.getElementById('splashText');
-    const randomIndex = Math.floor(Math.random() * splashTexts.length);
-    splashTextElement.textContent = splashTexts[randomIndex];
-
+   
     // Show popup
     const popupOverlay = document.getElementById('popupOverlay');
     popupOverlay.style.display = 'flex';
