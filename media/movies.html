@@ -52,133 +52,142 @@
 <center><h1>Entertopia Movies</h1></center>
 <center><h3 id="splash">INFAMY</h3></center>
 <br>
+<center>
+  <select id="categorySelect">
+      <option value="">All</option>
+      <option value="Horror">Horror</option>
+      <option value="Classic">Classic</option>
+      <option value="Kids Movies">Kids Movies</option>
+      <option value="Other">Other</option>
+  </select>
+  </center>
+  <!--data-category="Horror"-->
+  <!--data-category="Classic"-->
+  <!--data-category="Kids Movies"-->
+  <!--data-category="Other"-->
+
 <div class="search-bar">
   <input type="text" id="search-input" placeholder="Search Our Movie Library...">
   <button onclick="searchGames()">Search</button>
 </div>
 <br>
 <div class="row">
-<div class="column">
+<div class="column" data-category="Horror">
   <a href="https://drive.google.com/file/d/1aJvUm9s0kMMUhFJ7N2HzcLhmkw8yOxoq/view?usp=drive_link"><button id="button"><img src="/imgs/scream.jpeg" id="img">
     <p id="hide">Scream</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Kids Movies">
   <a href="https://drive.google.com/file/d/0B4hN7fniyzpwalFxaEl3Tm5nLVU/view?usp=sharing&resourcekey=0-ANoY0MoL3TgANh4nqeyZtQ"><button id="button"><img src="/imgs/theangrymovie.jpeg" id="img">
     <p id="hide">The Angry Birds Movie</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Kids Movies">
   <a href="https://drive.google.com/file/d/0BzeoWH_knJbnUE02VUNtTEREQ3M/view?usp=sharing&resourcekey=0-xxz3jyAWckdoJf2awnnCCg"><button id="button"><img src="/imgs/thebossbaby.jpeg" id="img">
     <p id="hide">The Boss Baby</p>
 </button> </a>
 </div>
-<div class="column">
-  <a href="https://drive.google.com/file/d/0B5QJgBuViQvxMExwdFd4LXp1cjQ/view?usp=sharing&resourcekey=0--AymX6yocYDSRtZ5jQFm1g"><button id="button"><img src="/imgs/kungfupanda.jpeg" id="img">
-    <p id="hide">Kung Fu Panda </p>
-</button> </a>
-</div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/1uUsjImDwx4HO_N2SP9jv2nq8k6sSey5U/view?usp=sharing"><button id="button"><img src="/imgs/bluebeetle.jpeg" id="img">
     <p id="hide">Blue Beetle</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/1NAab03OzkNETJP9wOhkIVFoKpAEF1kfV/view?usp=sharing"><button id="button"><img src="/imgs/onepiecered.jpeg" id="img">
     <p id="hide">One Piece Red</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Horror">
   <a href="https://drive.google.com/file/d/1Bth2mCNTs-Yw7Uex6bUkTqvP2ctcD19L/view?usp=drive_link"><button id="button"><img src="/imgs/mousetrapmickey.jpeg" id="img">
     <p id="hide">Mouse Trap Mickey</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0By5b6VRVheoWUmNTcEJiOXdJdjQ/view?resourcekey=0-S6FZYivo19MI9Z4h-ZRrOw"><button id="button"><img src="/imgs/kingkong.jpeg" id="img">
     <p id="hide">King Kong</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0ByipROp4etgUZ3lOYTFtNmtrMDQ/view?usp=sharing&resourcekey=0-Moisb5FFGTWUdxP5uRsN3g"><button id="button"><img src="/imgs/the40yearoldvirgin.jpeg" id="img">
     <p id="hide">The 40 Year Old Virgin</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/2012.jpeg" id="img">
     <p id="hide">2012</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/adogspurpose.jpeg" id="img">
     <p id="hide">A Dogs Purpose</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/alienpredator.jpeg" id="img">
     <p id="hide">Alien Vs Predator</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/avpalienvspredator.jpeg" id="img">
     <p id="hide">AVP Alien Vs Predator</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/dodgeballmovie.jpeg" id="img">
     <p id="hide">Dodgeball</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/forrestgump.jpeg" id="img">
     <p id="hide">The Forrest Gump</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/guardiansofthegalaxy.jpeg" id="img">
     <p id="hide">Guardians Of the Galaxy</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/killzone.jpeg" id="img">
     <p id="hide">Kill Zone</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Kids Movies">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/mrpeabodyandsherman.jpeg" id="img">
     <p id="hide">Mrpeabody and Sherman</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/passengers.jpeg" id="img">
     <p id="hide">Passengers</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/pitchperfect.jpeg" id="img">
     <p id="hide">Pitch Perfect</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/thewolverine.jpeg" id="img">
     <p id="hide">The Wolverine</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Kids Movies">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/trolls.jpeg" id="img">
     <p id="hide">Trolls</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Other">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/whyhim.jpeg" id="img">
     <p id="hide">Why Him?</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/xmenapocalypse.jpeg" id="img">
     <p id="hide">Xmen Apocalypse</p>
 </button> </a>
 </div>
-<div class="column">
+<div class="column" data-category="Classic">
   <a href="https://drive.google.com/file/d/0B69h6W6sv5LIRGZhb0NUTF9pMVk/view?usp=sharing&resourcekey=0-W0j9qqJACbM16iPs_zKHww"><button id="button"><img src="/imgs/xmenorigins.jpeg" id="img">
     <p id="hide">Xmen origin Wolverine</p>
 </button> </a>

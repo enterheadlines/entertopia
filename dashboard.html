@@ -24,6 +24,7 @@
             text-align: center;
             box-shadow: 0 0 10px  rgb(58, 53, 58);
             padding: 20px;
+            width: 50%;
             margin-left: 20px;
             margin-bottom: 10px;
             margin-right: 200px;
@@ -174,11 +175,47 @@
     </div>
     <br>
   
-
+    <button id="saveButton">Save Local Storage</button>
+    <input type="file" id="loadInput" accept=".json" style="display:none;">
+    <button id="loadButton">Load Local Storage</button>
 
     
     </div>
+<script>
+    // Function to save local storage to a file
+    document.getElementById('saveButton').addEventListener('click', function() {
+            const localStorageData = JSON.stringify(localStorage);
+            const blob = new Blob([localStorageData], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'localStorage.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
 
+        // Function to load local storage from a file
+        document.getElementById('loadButton').addEventListener('click', function() {
+            document.getElementById('loadInput').click();
+        });
+
+        document.getElementById('loadInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const localStorageData = JSON.parse(e.target.result);
+                    for (const key in localStorageData) {
+                        localStorage.setItem(key, localStorageData[key]);
+                    }
+                    alert('Local storage loaded successfully!');
+                };
+                reader.readAsText(file);
+            }
+        });
+</script>
     <script>
         // Load saved profile data from localStorage
         window.onload = function() {
