@@ -20,10 +20,23 @@ function toggleFullscreen() {
 
 console.log("ENTERTOPIA")
 
-function changeColor(color) {
-  document.body.style.backgroundColor = color;
-}
 
-function resetColor() {
-  document.body.style.backgroundColor = '';
-}
+    // Function to change the background color and save it to local storage
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+      localStorage.setItem('backgroundColor', color); // Save color to local storage
+  }
+
+  // Function to reset the background color and clear local storage
+  function resetColor() {
+      document.body.style.backgroundColor = '';
+      localStorage.removeItem('backgroundColor'); // Clear the saved color
+  }
+
+  // On page load, set the background color from local storage if available
+  window.onload = function() {
+      const savedColor = localStorage.getItem('backgroundColor');
+      if (savedColor) {
+          document.body.style.backgroundColor = savedColor;
+      }
+  };
