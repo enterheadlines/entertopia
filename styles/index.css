@@ -1,7 +1,7 @@
 /*40% skidded*/
 
 body {
-	background: linear-gradient(to right, #5d5d5f, #686a6a); /* Smooth gradient background */
+	background-color: #6f6f6f;
 	animation: gradient 15s ease infinite;
 	background-size: 400% 400%;
 	height: 100vh;
