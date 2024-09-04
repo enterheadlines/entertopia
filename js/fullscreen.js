@@ -57,7 +57,6 @@ console.log("ENTERTOPIA")
         console.error('Loading screen element not found');
     }
 });
-
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
