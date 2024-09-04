@@ -1,7 +1,7 @@
 /*40% skidded*/
 
 body {
-	background-color: hsl(0, 0%, 33%);
+	background-color: hsl(0, 0%, 18%);
 	animation: gradient 15s ease infinite;
 	background-size: 400% 400%;
 	height: 100vh;
@@ -521,3 +521,13 @@ option{
 	border: none;
 	font-family: 'Montserrat', sans-serif;
 }
+
+#particles-js{
+	width: 100%;
+	height: 100%;
+	background-color: #b61924;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+  }
