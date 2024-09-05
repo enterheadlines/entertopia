@@ -16,7 +16,8 @@ body {
 	animation: fadeInAnimation ease 1.5s;
 }
 #navshi {
-
+	backdrop-filter: blur(5px);
+	background: transparent;
 	font-size:15px;
 	margin: 0px;
    border: none;
