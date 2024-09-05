@@ -155,98 +155,120 @@
         </div>
     </div>
 </div>
-<canvas id="canvas"></canvas>
-<script>
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = document.documentElement.scrollHeight;
 
-    let particlesArray;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dust Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = document.documentElement.scrollHeight;
 
-    class Particle {
-        constructor(x, y, directionX, directionY, size, color) {
-            this.x = x;
-            this.y = y;
-            this.directionX = directionX;
-            this.directionY = directionY;
-            this.size = size;
-            this.color = color;
+        let particlesArray;
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+
+            update() {
+                this.x += this.directionX;
+                this.y += this.directionY;
+
+                // Check if the particle goes out of the canvas
+                if (this.x > canvas.width + this.size) {
+                    this.x = -this.size; // Reappear on the left
+                }
+                if (this.x < -this.size) {
+                    this.x = canvas.width + this.size; // Reappear on the right
+                }
+                if (this.y > canvas.height + this.size) {
+                    this.y = -this.size; // Reappear at the top
+                }
+                if (this.y < -this.size) {
+                    this.y = canvas.height + this.size; // Reappear at the bottom
+                }
+
+                this.draw();
+            }
         }
 
-        draw() {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-            ctx.fillStyle = this.color;
-            ctx.fill();
+        function init() {
+            particlesArray = [];
+            const numberOfParticles = 100; // Increased number of particles for a dust effect
+            for (let i = 0; i < numberOfParticles; i++) {
+                const size = Math.random() * 2 + 1; // Smaller size for dust
+                const x = Math.random() * (innerWidth - size * 2) + size;
+                const y = Math.random() * (canvas.height - size * 2) + size;
+                const directionX = (Math.random() - 0.5) * 1.5; // Slower speed
+                const directionY = (Math.random() - 0.5) * 1.5; // Slower speed
+                const color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.3})`; // White with some transparency
+
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
         }
 
-        update() {
-            this.x += this.directionX;
-            this.y += this.directionY;
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, canvas.height);
 
-            // Check if the particle goes out of the canvas
-            if (this.x > canvas.width + this.size) {
-                this.x = -this.size; // Reappear on the left
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
             }
-            if (this.x < -this.size) {
-                this.x = canvas.width + this.size; // Reappear on the right
-            }
-            if (this.y > canvas.height + this.size) {
-                this.y = -this.size; // Reappear at the top
-            }
-            if (this.y < -this.size) {
-                this.y = canvas.height + this.size; // Reappear at the bottom
-            }
-
-            this.draw();
         }
-    }
 
-    function init() {
-        particlesArray = [];
-        const numberOfParticles = 100; // Increased number of particles for a dust effect
-        for (let i = 0; i < numberOfParticles; i++) {
+        init();
+        animate();
+
+        window.addEventListener('resize', function () {
+            canvas.width = window.innerWidth;
+            canvas.height = document.documentElement.scrollHeight;
+            init();
+        });
+
+        canvas.addEventListener('click', function (event) {
             const size = Math.random() * 2 + 1; // Smaller size for dust
-            const x = Math.random() * (innerWidth - size * 2) + size;
-            const y = Math.random() * (canvas.height - size * 2) + size;
-            const directionX = (Math.random() - 0.5) * 3; // Slightly slower speed
-            const directionY = (Math.random() - 0.5) * 3; // Slightly slower speed
+            const x = event.clientX;
+            const y = event.clientY;
+            const directionX = (Math.random() - 0.5) * 1.5; // Slower speed
+            const directionY = (Math.random() - 0.5) * 1.5; // Slower speed
             const color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.3})`; // White with some transparency
 
             particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
-        }
-    }
+        });
+    </script>
+</body>
+</html>
 
-    function animate() {
-        requestAnimationFrame(animate);
-        ctx.clearRect(0, 0, innerWidth, canvas.height);
-
-        for (let i = 0; i < particlesArray.length; i++) {
-            particlesArray[i].update();
-        }
-    }
-
-    init();
-    animate();
-
-    window.addEventListener('resize', function () {
-        canvas.width = window.innerWidth;
-        canvas.height = document.documentElement.scrollHeight;
-        init();
-    });
-
-    canvas.addEventListener('click', function (event) {
-        const size = Math.random() * 2 + 1; // Smaller size for dust
-        const x = event.clientX;
-        const y = event.clientY;
-        const directionX = (Math.random() - 0.5) * 3; // Slightly slower speed
-        const directionY = (Math.random() - 0.5) * 3; // Slightly slower speed
-        const color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.3})`; // White with some transparency
-
-        particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
-    });
-</script>
     </body>
     <script src="/js/ip.js"></script>
 <script>
