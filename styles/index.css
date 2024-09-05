@@ -24,7 +24,6 @@ body {
 	padding-left: 15px;
 	padding: 20px;
     box-shadow: 0 0 10px   rgb(58, 53, 58);
-    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
 }
 @keyframes gradient {
 	0% {
