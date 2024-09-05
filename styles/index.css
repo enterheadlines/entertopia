@@ -543,3 +543,58 @@ body {
 		height: 100%;
 		z-index: -1;
 	}
+	body {
+		margin: 0;
+		display: flex;
+	}
+	
+	.sidebar {
+		width: 250px;
+		background-color: #333;
+		color: white;
+		position: fixed;
+		height: 100%;
+		left: -250px; /* Hide sidebar initially */
+		transition: left 0.3s ease;
+	}
+	
+	.sidebar h2 {
+		text-align: center;
+	}
+	
+	.sidebar ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	
+	.sidebar ul li {
+		padding: 15px;
+	}
+	
+	.sidebar ul li a {
+		color: white;
+		text-decoration: none;
+	}
+	
+	.sidebar ul li a:hover {
+		background-color: #575757;
+	}
+	
+	.main-content {
+		margin-left: 20px;
+		padding: 20px;
+		flex-grow: 1;
+	}
+	
+	#toggle-button {
+		  margin-bottom: 20px;
+				background: none;
+				border: none;
+				color: #333;
+				font-size: 24px;
+				cursor: pointer;
+		margin-bottom: 20px;
+	}
+	#go-back{
+		margin:15px;
+		}
