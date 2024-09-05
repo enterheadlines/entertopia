@@ -16,12 +16,8 @@ body {
 	animation: fadeInAnimation ease 1.5s;
 }
 #navshi {
-	position: sticky; /* Keeps the navbar at the top */
-    top: 0; /* Aligns it to the top */
-    width: 100%; /* Full width */
-    background: transparent; /* Make the background transparent */
-    backdrop-filter: blur(10px); /* Apply the blur effect */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+	backdrop-filter: blur(10px);
+	background: transparent;
 	font-size:15px;
 	margin: 0px;
 	border: 1px;
@@ -32,6 +28,7 @@ body {
 	padding: 20px;
 	background-color: rgb(58, 53, 58);
     box-shadow: 0 0 10px   rgb(58, 53, 58);
+    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
 }
 @keyframes gradient {
 	0% {
