@@ -5,6 +5,10 @@ Entertopia is a unblocked gaming website, currently hosting over 140 games, 23 a
  - 130+ Games
  - 50+ ROMs
  - 16+ Apps
+ - Custom OS
+ - Custom Web Store
+ - JS terminal
+ - Unblocked searching(NOT A PROXY)
  - forced cloaking
  - frequent updates
  - Useful tools and bookmarks

@@ -66,6 +66,13 @@ video {
 <br>
         <center><h1>Settings</h1></center>
         <br>
+        Options below are beta features
+        <br>
+        <hr>
+        <br>
+        Background
+        <br>
+        <hr>
         <center>
         <button onclick="changeColor('lightblue')" id="furr">Light Blue</button><br>
         <button onclick="changeColor('lightgreen')" id="furr">Light Green</button><br>
@@ -73,8 +80,33 @@ video {
         <button onclick="resetColor()" id="furr">Light Grey</button>
         </center>
 <br>
+<hr>
+<br>
+Tab Cloak
+<br>
+<hr>
+<center>
+    <form onsubmit="event.preventDefault(); updateTitleAndFavicon();">
+        <label for="titleInput">New Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter new title" required>
+        <br><br>
 
-
+        <label for="predefinedFavicon">Choose Predefined Favicon:</label>
+        <select id="predefinedFavicon">
+            <option value="https://entertopia.vercel.app/Screenshot 2024-05-30 20.33.35.png">Select a favicon</option>
+            <option value="https://entertopia.vercel.app/favicons/google.png">Google</option>
+            <option value="https://entertopia.vercel.app/favicons/google-drive.webp">Google drive</option>
+            <option value="https://entertopia.vercel.app/favicons/google-classroom.webp">Google Classroom</option>
+            <option value="https://entertopia.vercel.app/favicons/ixll.png">IXL</option>
+            <option value="https://entertopia.vercel.app/favicons/khanacademy.ico">Khan Academy</option>
+            <option value="https://entertopia.vercel.app/favicons/bingg.png">Bing</option>
+            <option value="https://entertopia.vercel.app/favicons/google-docs.webp">Google Docs</option>
+            <option value="https://entertopia.vercel.app/favicons/google-slides.ico">Google Slides</option>
+            <option value="https://entertopia.vercel.app/favicons/google-sheets.ico">Google Sheets</option>
+            <option value="https://entertopia.vercel.app/favicons/google-keeps.ico">Google Keep</option>
+            <option value="https://entertopia.vercel.app/favicons/pornhub.png">Pornhub</option>
+        </select>
+    </center>
 <div id="particles-js"></div>
 <script>
     
