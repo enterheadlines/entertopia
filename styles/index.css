@@ -194,6 +194,16 @@ a::after{
 	  border:none;
 	   resize:both;   
 }
+
+#iframe{
+
+	width: 100%;
+	height: 500px; /* Adjust the height as needed */
+	border-top: white;
+	border-bottom: white;
+	  border:none;
+	   resize:both;   
+}
 #fullscreenimage{
 	text-align: center;
 	height: 30px;
