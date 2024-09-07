@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infstore</title>
+    <style>
+         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+         h1{
+            font-size: 130px;
+         }
+header { background: #333; color: white; padding: 20px 0; text-align: center; height:500px; width:100%;}
+.category-buttons { margin: 20px 0; }
+.category-buttons button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin: 0 5px; transition: background 0.3s; }
+.category-buttons button:hover { background: #0056b3; }
+main { padding: 20px; display: flex; justify-content: center; }
+#app-container { display: flex; flex-wrap: wrap; /* Allow the apps to wrap / justify-content: center; / Center the apps */ }
+.app { position: relative; background: white; border: 1px solid #ccc; border-radius: 8px; margin: 15px; padding: 20px;  height:300px; width:300px;  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Infstore</h1>
+        <h4>Infstore is an innovative platform designed to provide users with access to a wide variety of games, applications, and utilities, all available for download in an unblocked format.<br> This means that users can enjoy their favorite digital content without the restrictions often imposed by school or workplace networks.<br> Infstore aims to create a seamless experience for users looking to explore and download a diverse range of software.</h4>
+        <div class="category-buttons">
+            <button onclick="resetApps()">All</button>
+            <button onclick="filterApps('games')">Games</button>
+            <button onclick="filterApps('productivity')">Productivity</button>
+            <button onclick="filterApps('Proxies')">Proxies</button>
+            <button onclick="filterApps('social')">Social</button>
+            <button onclick="filterApps('ROMs')">ROMs</button>
+        </div>
+    </header>
+    <main>
+        <section id="app-container">
+            <div class="app games">
+                <div class="app-background"></div>
+                <img src="app1.jpg" alt="App 1" class="app-image">
+                <h3>App Name 1</h3>
+                <p>Description of App 1.</p>
+                <a href=""><button>Download</button></a>
+            </div>
+            <div class="app productivity">
+                <div class="app-background"></div>
+                <img src="app3.jpg" alt="App 3" class="app-image">
+                <h3>App Name 3</h3>
+                <p>Description of App 3.</p>
+                <a href=""><button>Download</button></a>
+            </div>
+            <div class="app social">
+                <div class="app-background"></div>
+                <img src="app9.jpg" alt="App 9" class="app-image">
+                <h3>App Name 9</h3>
+                <p>Description of App 9.</p>
+                <a href=""><button>Download</button></a>
+            </div>
+            <div class="app ROMs">
+                <div class="app-background"></div>
+                <img src="app9.jpg" alt="App 9" class="app-image">
+                <h3>App Name 9</h3>
+                <p>Description of App 9.</p>
+                <a href=""><button>Download</button></a>
+            </div>
+            <div class="app Proxies">
+                <div class="app-background"></div>
+                <img src="app9.jpg" alt="App 9" class="app-image">
+                <h3>App Name 9</h3>
+                <p>Description of App 9.</p>
+                <a href=""><button>Download</button></a>
+            </div>
+        </div>
+        </section>
+    </main>
+    <script>
+        function filterApps(category) {
+            const apps = document.querySelectorAll('.app');
+            apps.forEach(app => {
+                app.style.display = app.classList.contains(category) || category === 'all' ? 'block' : 'none';
+            });
+        }
+
+        function resetApps() {
+            const apps = document.querySelectorAll('.app');
+            apps.forEach(app => {
+                app.style.display = 'block'; // Show all apps
+            });
+        }
+    </script>
+</body>
+</html>
