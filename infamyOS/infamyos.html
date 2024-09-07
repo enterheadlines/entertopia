@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a3ab2f7fa8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfamyOS</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: rgb(57, 57, 54);
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            left: -250px; /* Hidden by default */
+            transition: left 0.3s ease, visibility 0s 0.3s; /* Animation */
+            padding: 20px; /* Added padding */
+            visibility: hidden; /* Initially hidden */
+        }
+
+        .sidebar.open {
+            left: 0; /* Show sidebar */
+            visibility: visible; /* Make visible when open */
+            transition: left 0.3s ease; /* Animation for opening */
+        }
+
+        .content {
+            margin-left: 20px;
+            padding: 20px; /* Added padding */
+            flex-grow: 1; /* Allow content to occupy remaining space */
+            transition: margin-left 0.3s ease; /* Animation */
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background:none;
+            border:none;
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+
+        li {
+            padding: 10px 0; /* Add padding to list items */
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        /* Popup Window Styles */
+        .popup {
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hidden by default */
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+        .popup-header {
+            background-color: #f1f1f1;
+            padding: 10px;
+            cursor: move; /* Indicate the header is draggable */
+        }
+
+        .popup-content {
+            padding: 10px;
+            height: calc(100% - 40px); /* Adjust height for header */
+        }
+
+        .popup-close {
+            cursor: pointer;
+            float: right; /* Position close button to the right */
+        }
+
+        .resize-handle {
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            cursor: nwse-resize; /* Resize cursor */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border */
+        }
+        a{
+            text-decoration:none;
+            color: white;
+        }
+
+        a:hover{
+            text-decoration:none;
+            color: white;
+        }
+        a:active{
+            text-decoration:none;
+            color: white;
+        }
+        a:visited{
+            text-decoration:none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li data-url="https://entertopia.vercel.app/general/media.html">Media</li>
+            <li data-url="https://entertopia.vercel.app/general/arcade.html">Arcade</li>
+            <li data-url="https://entertopia.vercel.app/general/utilities.html">Apps</li>
+            <li data-url="https://uv-static-tau.vercel.app">Proxy</li>
+            <li data-url="https://entertopia.vercel.app/terminal/terminal.html">Terminal</li>
+            <li><a href="/index.html">Shut Down</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <!-- Popup Window -->
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <span class="popup-close" id="popupClose">✖</span>
+            <strong>New Window</strong>
+        </div>
+        <div class="popup-content">
+            <iframe id="popupIframe" src=""></iframe>
+        </div>
+        <div class="resize-handle" id="resizeHandle"></div> <!-- Resize Handle -->
+    </div>
+
+    <script>
+        // JavaScript Functionality
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            sidebar.classList.toggle('open');
+
+            // Adjust content margin when sidebar is opened
+            if (sidebar.classList.contains('open')) {
+                content.style.marginLeft = '250px'; // Move content to the right
+            } else {
+                content.style.marginLeft = '20px'; // Reset margin
+            }
+        });
+
+        const options = document.querySelectorAll('.sidebar li');
+        const popup = document.getElementById('popup');
+        const popupIframe = document.getElementById('popupIframe');
+
+        options.forEach(option => {
+            option.addEventListener('click', function() {
+                const url = this.getAttribute('data-url');
+                popupIframe.src = url; // Set iframe source to the selected URL
+                popup.style.display = 'block'; // Show popup
+            });
+        });
+
+        // Close popup
+        document.getElementById('popupClose').addEventListener('click', function() {
+            popup.style.display = 'none'; // Hide popup
+            popupIframe.src = ''; // Clear iframe source
+        });
+
+        // Make the popup draggable
+        dragElement(popup);
+
+        function dragElement(el) {
+            let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+            // If the header is clicked, start dragging
+            el.querySelector('.popup-header').onmousedown = dragMouseDown;
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                el.style.top = (el.offsetTop - pos2) + "px";
+                el.style.left = (el.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+
+        // Make the popup resizable
+        const resizeHandle = document.getElementById('resizeHandle');
+        
+        resizeHandle.onmousedown = initResize;
+
+        function initResize(e) {
+            e.preventDefault();
+            document.onmouseup = stopResize;
+            document.onmousemove = elementResize;
+        }
+
+        function elementResize(e) {
+            popup.style.width = (e.clientX - popup.getBoundingClientRect().left) + "px";
+            popup.style.height = (e.clientY - popup.getBoundingClientRect().top) + "px";
+        }
+
+        function stopResize() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    </script>
+</body>
+</html>

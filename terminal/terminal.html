@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <style>
+        /* CSS Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure the body takes full height */
+            background-color: #222;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #terminal {
+            border: none;
+            padding: 10px;
+            height: 100%; /* Full height */
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+
+        #output {
+            white-space: pre-wrap; /* Preserve whitespaces and wrap text */
+            word-wrap: break-word; /* Allow long words to break and wrap */
+        }
+
+        #input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            color: #fff;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <div id="output"></div>
+        <input id="input" type="search" placeholder="Type a command..." autofocus />
+    </div>
+    <script>
+        // JavaScript Functionality
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                const input = this.value;
+                this.value = ""; // Clear input field
+                processCommand(input);
+            }
+        });
+
+        function processCommand(command) {
+            const outputDiv = document.getElementById("output");
+            let response;
+
+            switch (command.toLowerCase()) {
+                case "ls":
+                    response = "file1.txt\nfile2.txt\nfolder1\n";
+                    break;
+                case "pwd":
+                    response = "/home/user";
+                    break;
+                case "mkdir new_folder":
+                    response = "Directory 'new_folder' created.";
+                    break;
+                case "clear":
+                    outputDiv.innerHTML = "";
+                    return; // Exit the function to prevent adding output
+                case "help":
+                    response = `Available commands:\n
+                    ls - List files and directories\n
+                    pwd - Print working directory\n
+                    mkdir <directory> - Create a new directory\n
+                    clear - Clear the terminal output\n
+                    help - Display this help message`;
+                    break;
+                default:
+                    response = `Command not found: ${command}`;
+            }
+
+            outputDiv.innerHTML += `<div>> ${command}</div>`;
+            outputDiv.innerHTML += `<div>${response}</div>`;
+            outputDiv.scrollTop = outputDiv.scrollHeight; // Scroll to the bottom
+        }
+    </script>
+</body>
+</html>
