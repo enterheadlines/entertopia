@@ -215,6 +215,10 @@
             <pre id="uv-error-code"></pre>
           </div>
         </center>
+        <center>
+          <a href="https://discord.gg/WSUy3dHFRh"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://tiktok.com/@enterheadlines"><i class="fa-brands fa-tiktok"></i></a>
+        </center>
       </div>
     </div>
   <div id="statt-counter">
@@ -230,6 +234,7 @@
   <div class="container">
       <p><strong>Notice:</strong> v6 is still in development. Use it if you want to see what it looks like, but please be aware that security is not assured.</p>
       <button onclick="proceed()">Proceed Anyway</button>
+      <br>
       <button onclick="cancel()">Cancel</button>
   </div>
 </div>
@@ -457,7 +462,7 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
         win.document.body.appendChild(iframe);
         window.location.replace("https://google.com");
         const name = localStorage.getItem('name') || 'Google'
-        const icon = localStorage.getItem('icon') || '/google.webp'
+        const icon = localStorage.getItem('icon') || '/favicons/google.webp'
 
         var interval = setInterval(function() {
           if (win.closed) {
@@ -470,10 +475,10 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
   }
 </script>
 
-<script src="uv/uv.bundle.js" defer></script>
-<script src="uv/uv.config.js" defer></script>
-<script src="register-sw.js" defer></script>
-<script src="search.js" defer></script>
-<script src="index.js" defer></script>
-<script src="error.js" defer></script>
+<script src="/static/uv/uv.bundle.js" defer></script>
+<script src="/static/uv/uv.config.js" defer></script>
+<script src="/static/register-sw.js" defer></script>
+<script src="/static/search.js" defer></script>
+<script src="/static/index.js" defer></script>
+<script src="/static/error.js" defer></script>
 </html>

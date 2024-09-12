@@ -15,7 +15,7 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     const link = doc.createElement('link')
 
     const name = localStorage.getItem('name') || 'Google'
-    const icon = localStorage.getItem('icon') || '/google.webp'
+    const icon = localStorage.getItem('icon') || '/favicons/google.webp'
 
     doc.title = name
     link.rel = 'icon'
