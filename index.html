@@ -12,26 +12,19 @@
        <script src="js/fullscreen.js"></script>
      <script src="js/movies.php"></script>
        <script src="js/cloak.js"></script>
-       <script src="/uv/index.js"></script>
-       <script src="/uv/jquery.js"></script>
-       <script src="/uv/uv.bundle.js"></script>
-       <script src="/uv/uv.config.js"></script>
-       <script src="/uv/uv.hander.js"></script>
-       <script src="/uv/uv.sw.js"></script>
-       <script src="/uv/search.js"></script>
-       <script src="/uv/register-sw.js"></script>
+       
        <style>
         #uv-address{
           font-family: 'Press Start 2P';
   color: white;
   background-color: rgb(64, 64, 64);
-  height: 30px;
+  height: 50px;
   width: 600px;
   border-radius: 20px;
   cursor: pointer;
   border: none;
   padding: 5px;
-  box-shadow: 0 0 10px rgb(176, 32, 192)
+  box-shadow: 0 0 10px rgb(64, 64, 64)
         }
        /* Full-screen overlay style */
        #overlay {
@@ -477,4 +470,10 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
   }
 </script>
 
+<script src="uv/uv.bundle.js" defer></script>
+<script src="uv/uv.config.js" defer></script>
+<script src="register-sw.js" defer></script>
+<script src="search.js" defer></script>
+<script src="index.js" defer></script>
+<script src="error.js" defer></script>
 </html>
