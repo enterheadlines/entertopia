@@ -12,6 +12,85 @@
        <script src="js/fullscreen.js"></script>
      <script src="js/movies.php"></script>
        <script src="js/cloak.js"></script>
+       <script src="/uv/index.js"></script>
+       <script src="/uv/jquery.js"></script>
+       <script src="/uv/uv.bundle.js"></script>
+       <script src="/uv/uv.config.js"></script>
+       <script src="/uv/uv.hander.js"></script>
+       <script src="/uv/uv.sw.js"></script>
+       <script src="/uv/search.js"></script>
+       <style>
+        #uv-address{
+          font-family: 'Press Start 2P';
+  color: white;
+  background-color: rgb(64, 64, 64);
+  height: 30px;
+  width: 600px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(176, 32, 192)
+        }
+       /* Full-screen overlay style */
+       #overlay {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100vw;
+           height: 100vh;
+           background: rgba(0, 0, 0, 0.7);
+           color: #fff;
+           font-family: Arial, sans-serif;
+           z-index: 1000;
+           visibility: visible;
+           opacity: 1;
+           transition: opacity 0.5s ease, visibility 0.5s ease;
+       }
+
+       /* Hidden state for the overlay */
+       #overlay.hidden {
+           visibility: hidden;
+           opacity: 0;
+           transition: opacity 0.5s ease, visibility 0.5s ease;
+       }
+
+       .container {
+           text-align: center;
+           padding: 20px;
+           background: #333;
+           border-radius: 8px;
+           transform: scale(1);
+           transition: transform 0.5s ease;
+       }
+
+       #overlay.hidden .container {
+           transform: scale(0.8);
+       }
+
+       p {
+           font-size: 18px;
+           margin-bottom: 20px;
+       }
+
+       button {
+           padding: 10px 20px;
+           font-size: 16px;
+           border: none;
+           border-radius: 4px;
+           background: #555;
+           color: #fff;
+           cursor: pointer;
+           margin: 0 10px;
+       }
+
+       button:hover {
+           background: #777;
+       }
+   </style>
        <style>
             .popup-overlay {
             position: fixed;
@@ -133,8 +212,14 @@
       <center><h1>Entertopia</h1></center>
       <center><h4 id="splash">INFAMY</h4 ></center>
         <center>
-        <a href="https://discord.gg/WSUy3dHFRh"><button id="gameback">Join Our Discord</button></a>
-        <a href="" id="openScriptButton"><button id="gameback">About:blank</button></a>
+          <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search the web" class="form__input"/>
+          </form>
+          <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
         </center>
       </div>
     </div>
@@ -147,7 +232,38 @@
    </div>
   
 </div>
+<div id="overlay">
+  <div class="container">
+      <p><strong>Notice:</strong> v6 is still in development. Use it if you want to see what it looks like, but please be aware that security is not assured.</p>
+      <button onclick="proceed()">Proceed Anyway</button>
+      <button onclick="cancel()">Cancel</button>
+  </div>
+</div>
 
+<script>
+  function proceed() {
+      var overlay = document.getElementById('overlay');
+      overlay.classList.add('hidden');
+      setTimeout(function() {
+          // Additional functionality can be added here if needed
+          // For example, redirect to a different page
+      }, 500); // Wait for the transition to finish before taking additional actions
+  }
+
+  function cancel() {
+      var overlay = document.getElementById('overlay');
+      overlay.classList.add('hidden');
+      setTimeout(function() {
+          window.location.href = 'https://www.google.com'; // Redirect to Google
+      }, 500); // Wait for the transition to finish before redirecting
+  }
+
+  // Optional: Add logic to handle the overlay visibility on page load
+  window.onload = function() {
+      var overlay = document.getElementById('overlay');
+      // The overlay is visible on page load by default
+  };
+</script>
 </html>
 
     </body>
@@ -359,7 +475,5 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
     };
   }
 </script>
-<script>
-alert("V6 development will begin so if the sites slow or broken its prob because its still in development")
-</script>
+
 </html>
