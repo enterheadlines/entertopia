@@ -366,13 +366,7 @@ p{
 	width:170px;
 }
 
-.container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-  }
+
   #ass{
 	display: flex;
 	flex-direction: row;

@@ -963,7 +963,39 @@
     <br>
     <center><button id="interstellarsucks" onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Go back?</button></center>
 
-
+    <div id="overlay">
+        <div class="container">
+            <p><strong>Notice:</strong>Right now games do not work because im making it work locally instead of externally so just use the proxy</p>
+            <button onclick="proceed()">Proceed Anyway</button>
+            <br>
+            <button onclick="cancel()">Cancel</button>
+        </div>
+      </div>
+      
+      <script>
+        function proceed() {
+            var overlay = document.getElementById('overlay');
+            overlay.classList.add('hidden');
+            setTimeout(function() {
+                // Additional functionality can be added here if needed
+                // For example, redirect to a different page
+            }, 500); // Wait for the transition to finish before taking additional actions
+        }
+      
+        function cancel() {
+            var overlay = document.getElementById('overlay');
+            overlay.classList.add('hidden');
+            setTimeout(function() {
+                window.location.href = 'https://www.google.com'; // Redirect to Google
+            }, 500); // Wait for the transition to finish before redirecting
+        }
+      
+        // Optional: Add logic to handle the overlay visibility on page load
+        window.onload = function() {
+            var overlay = document.getElementById('overlay');
+            // The overlay is visible on page load by default
+        };
+      </script>
     <div id="particles-js"></div>
 <script>
     
