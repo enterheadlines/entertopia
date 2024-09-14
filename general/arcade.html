@@ -137,7 +137,7 @@
           padding: 10px 0;
         }
     
-        .container {
+        .country {
           display: flex;
           justify-content: space-between;
           padding: 20px;
@@ -145,6 +145,7 @@
     
         .left-section, .middle-section, .right-section {
           width: 30%;
+          text-align: center;
           background-color: rgb(63, 63, 63);
           color: white;
           padding: 20px;
@@ -229,7 +230,7 @@
     </div>
 </div>
 <br>
-<div class="container"></div>
+<div class="country">
     <div class="left-section">
       <h2>Recommended Games</h2>
       <div class="slider">
@@ -254,10 +255,11 @@
       <div class="new-game">
         <h3>Zombocalypse</h3>
         <a href=""><img src="/imgs/zombocalypse.jpeg" width="250px" height="150px" class="cake"></a>
-        <h6><p>Simple Zombie guy</p></h6>
+        <h6><p>Simple Zombie Game</p></h6>
       </div>
     </div>
   </div>
+</div>
 <br>
 <center>
 <select id="categorySelect">
@@ -1163,6 +1165,7 @@
         <div class="container">
             <p><strong>Notice:</strong>Right now games do not work because im making it work locally instead of externally so just use the proxy</p>
             <button onclick="proceed()">Proceed Anyway</button>
+            <br>
             <br>
             <button onclick="cancel()">Cancel</button>
         </div>
