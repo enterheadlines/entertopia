@@ -28,7 +28,7 @@
 .container {
       max-width: 600px;
       margin: 50px auto;
-      background-color: white;
+      background-color: rgb(81, 81, 81);
       padding: 30px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -126,7 +126,7 @@
         <div class="profile-picture">
           <img id="profile-image" src="/imgs/defaultprofile.png" alt="Profile Picture">
           <input type="file" id="profile-picture-input" onchange="updateProfilePicture()" style="display: none;">
-          <button class="cancel-button" onclick="cancelProfilePicture()" style="display: none;">x</button>
+          <button class="cancel-button" onclick="cancelProfilePicture()" style="display: block;">x</button>
         </div>
         <div class="name-bio">
           <input type="text" id="name-input" placeholder="Enter your name" value="John Doe">
@@ -163,7 +163,7 @@
     
         function cancelProfilePicture() {
           profilePictureInput.value = '';
-          profileImage.src = 'default-profile-picture.jpg';
+          profileImage.src = '/imgs/defaultprofile.png';
           localStorage.removeItem('profilePicture');
           profilePictureInput.style.display = 'block';
           document.querySelector('.cancel-button').style.display = 'none';
