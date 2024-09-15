@@ -527,3 +527,12 @@ document.getElementById('splash').innerText = splashtext[Math.floor(Math.random(
 <script src="/static/index.js" defer></script>
 <script src="/static/error.js" defer></script>
 </html>
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  // Show your custom install button
+});
+
+</script>

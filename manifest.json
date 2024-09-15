@@ -1,12 +1,14 @@
-
 {
     "name": "Entertopia",
-    "version": "5.0.0",
-    "description": "Web games",
-    "manifest_version": 3,
-    "author": "Infamy",
-    "action":{
-        "default_popup": "index.html",
-        "default_title": "Entertopia"
-    }
-}
+    "short_name": "Entertopia",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "Screenshot 2024-05-30 20.33.35.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
