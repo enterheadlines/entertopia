@@ -1,6 +1,10 @@
 # Entertopia
 Entertopia is a unblocked gaming website, currently hosting over 140 games, 23 apps and 63 ROMs.
-
+## Before you fork this
+ - if u deploy to vercel or netlify just know this will take so much bandwidth
+ - but its worth it cause it has lots of features
+ - also if u fork this it will take about 20 minutes because of the sheer number of games
+ - All jokes aside if u are gonna deploy this be careful
 ## Features
  - 130+ Games
  - 50+ ROMs

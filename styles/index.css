@@ -147,33 +147,6 @@ a::after{
    
   }
 
-
-  .button {
-	font-family: "Press Start 2P";
-	padding:0px;
-	font-size: 18px;
-  background-color: rgb(58, 53, 58);
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  box-shadow: 0 0 10px  rgb(58, 53, 58);
-  text-decoration: none;
-  display: inline;
-  margin: 0px;
-  margin-bottom: 10px;
-  height:200px;
-  width:500px;
-  }
-  .button:hover {
-	border-radius: 25px;
-  background-color:  rgb(58, 53, 58);
-  transform: scale(1.1);
-  }
   
   @keyframes fadeInAnimation {
 	0% {
@@ -564,6 +537,7 @@ body {
 		transition: opacity 0.3s ease; /* Animation for fade in/out */
 	}
 	.modal-content {
+		color: black;
 		background-color: #ffffff;
 		padding: 20px;
 		border-radius: 10px;
