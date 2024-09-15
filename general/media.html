@@ -62,6 +62,103 @@
   transform: scale(1.1);
 }
        </style>
+       <style>
+        /* CSS goes here */
+        body {
+          font-family: 'Press Start 2P';
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+        }
+    
+        .country {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+        }
+    
+        .left-section, .middle-section, .right-section {
+          width: 30%;
+          text-align: center;
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 40px;
+          margin: 0 10px; /* Space between sections */
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+    
+        .left-section:hover, .middle-section:hover, .right-section:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+    
+        .slider {
+          position: relative;
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+    
+        .slide {
+          display: none;
+          width: 100%;
+          height: 100%;
+          background-color: #676565;
+          text-align: center;
+          line-height: 200px;
+          font-size: 24px;
+          transition: opacity 0.5s ease-in-out;
+          border-radius: 30px;
+        }
+    
+        .active {
+          display: block;
+          opacity: 1;
+        }
+    
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+    
+        .prev {
+      border-radius: 10px;
+      left: 10px;
+    }
+
+    .next {
+      border-radius: 10px;
+      right: 10px;
+    }
+    
+        h2 {
+          text-align: center; /* Center titles */
+        }
+        h3 {
+          text-align: center; /* Center titles */
+        }
+        p {
+          text-align: center; /* Center titles */
+        }
+        .cake{
+         width: 100%;
+         text-align: center;
+        }
+      </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
        <script src="/js/time.js"></script>
@@ -73,9 +170,35 @@
       </div>
         </div>
 <br>
-<center><h1>Entertopia Media</h1></center>
-<center><h3 id="splash">INFAMY</h3></center>
-<br>
+<div class="country">
+  <div class="left-section">
+    <h2>Recommended Movies</h2>
+    <div class="slider">
+      <a href="/app/ "><div class="slide active"><img src="/imgs/deadpoolandwolverine.jpeg" width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <a href="/app/ "><div class="slide"><img src="/imgs/ " width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+  <div class="middle-section">
+    <h2>Entertopia Media</h2>
+    <p><h5>Entertopia media is a dedicated website that offers a vast collection of films across various genres, providing users with the ability to explore, watch, and enjoy movies from the comfort of their homes.</h5><h5>The platform features user-friendly navigation, allowing movie enthusiasts to find ratings, reviews, and streaming options for both classic and contemporary films, making it a go-to destination for all things cinema Enhance</h5></p>
+  </div>
+  <div class="right-section">
+    <h2>Newest Release</h2>
+    <div class="new-game">
+      <a href="/app/ "><img src="/imgs/deadpoolandwolverine.jpeg" width="250px" height="150px" class="cake" style="border-radius: 30px;"></a>
+      <h3>Deadpool and Wolverine</h3>
+    </div>
+  </div>
+</div>
+</div>
 <br>
 <center>
     <select id="categorySelect">
@@ -97,17 +220,17 @@
   </div>
   <br>
   <div class="row">
-  <div class="column" data-category=" ">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+  <div class="column" data-category="Other">
+    <a href=" "><button id="button"><img src="/imgs/deadpoolandwolverine.jpeg" id="img">
       <p id="hide">Deadpool and Wolverine</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
+  <div class="column" data-category="Other">
     <a href=" "><button id="button"><img src="/imgs/ " id="img">
       <p id="hide">Borderlands</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
+  <div class="column" data-category="Other">
     <a href=" "><button id="button"><img src="/imgs/ " id="img">
       <p id="hide">Beetlejuice</p>
   </button> </a>
@@ -142,7 +265,7 @@
       <p id="hide">Spirited Away</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
+  <div class="column" data-category="Other">
     <a href=" "><button id="button"><img src="/imgs/ " id="img">
       <p id="hide">The dark knight</p>
   </button> </a>
@@ -167,7 +290,7 @@
       <p id="hide">Spiderman Across the spiderverse</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
+  <div class="column" data-category="Other">
     <a href=" "><button id="button"><img src="/imgs/ " id="img">
       <p id="hide">City Lights</p>
   </button> </a>
@@ -203,42 +326,42 @@
   </button> </a>
   </div>
   <div class="column" data-category="Horror">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/scream.jpeg" id="img">
       <p id="hide">Scream</p>
   </button> </a>
   </div>
   <div class="column" data-category="Kids Movies">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/thebossbaby.jpeg" id="img">
       <p id="hide">The boss baby</p>
   </button> </a>
   </div>
   <div class="column" data-category="Kids Movies">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/angrybirds.jpeg" id="img">
       <p id="hide">The angry birds movie</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+  <div class="column" data-category="Other">
+    <a href=" "><button id="button"><img src="/imgs/bluebeetle.jpeg" id="img">
       <p id="hide">Blue Beetle</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+  <div class="column" data-category="Other">
+    <a href=" "><button id="button"><img src="/imgs/onepiecered.jpeg" id="img">
       <p id="hide">One Piece Red</p>
   </button> </a>
   </div>
   <div class="column" data-category="Horror">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/mousetrapmickey.jpeg" id="img">
       <p id="hide">Mouse Trap mickey</p>
   </button> </a>
   </div>
   <div class="column" data-category="Classic">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/kingkong.jpeg" id="img">
       <p id="hide">King Kong</p>
   </button> </a>
   </div>
   <div class="column" data-category="Classic">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/the40yearoldvirgin.jpeg" id="img">
       <p id="hide">The 40 year old virgin</p>
   </button> </a>
   </div>
@@ -248,27 +371,27 @@
   </button> </a>
   </div>
   <div class="column" data-category="Classic">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/adogspurpose.jpeg" id="img">
       <p id="hide">A dogs purpose</p>
   </button> </a>
   </div>
   <div class="column" data-category="Classic">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/forrestgump.jpeg" id="img">
       <p id="hide">Forrest Gump</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+  <div class="column" data-category="Other">
+    <a href=" "><button id="button"><img src="/imgs/guardiansofthegalaxy.jpeg" id="img">
       <p id="hide">Guardians of the galaxy</p>
   </button> </a>
   </div>
-  <div class="column" data-category=" ">
+  <div class="column" data-category="Other">
     <a href=" "><button id="button"><img src="/imgs/ " id="img">
       <p id="hide">The Wolverine</p>
   </button> </a>
   </div>
   <div class="column" data-category="Kids Movies"> 
-    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+    <a href=" "><button id="button"><img src="/imgs/trolls.jpeg" id="img">
       <p id="hide">Trolls</p>
   </button> </a>
   </div>
@@ -651,3 +774,36 @@
     </script>
 </html>
 <script src="/js/realsearch.js"></script>
+<script>
+  // JavaScript goes here
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.style.display = 'block';
+        setTimeout(() => {
+          slide.classList.add('active');
+        }, 10);
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize the first slide
+  showSlide(currentSlide);
+</script>
+<script src="/js/search.js"></script>

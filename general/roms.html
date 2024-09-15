@@ -44,6 +44,103 @@ video {
   }
 
        </style>
+       <style>
+        /* CSS goes here */
+        body {
+          font-family: 'Press Start 2P';
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+        }
+    
+        .country {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+        }
+    
+        .left-section, .middle-section, .right-section {
+          width: 30%;
+          text-align: center;
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 40px;
+          margin: 0 10px; /* Space between sections */
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+    
+        .left-section:hover, .middle-section:hover, .right-section:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+    
+        .slider {
+          position: relative;
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+    
+        .slide {
+          display: none;
+          width: 100%;
+          height: 100%;
+          background-color: #676565;
+          text-align: center;
+          line-height: 200px;
+          font-size: 24px;
+          transition: opacity 0.5s ease-in-out;
+          border-radius: 30px;
+        }
+    
+        .active {
+          display: block;
+          opacity: 1;
+        }
+    
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+    
+        .prev {
+      border-radius: 10px;
+      left: 10px;
+    }
+
+    .next {
+      border-radius: 10px;
+      right: 10px;
+    }
+    
+        h2 {
+          text-align: center; /* Center titles */
+        }
+        h3 {
+          text-align: center; /* Center titles */
+        }
+        p {
+          text-align: center; /* Center titles */
+        }
+        .cake{
+         width: 100%;
+         text-align: center;
+        }
+      </style>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2663657955737167"
        crossorigin="anonymous"></script>
        <script src="/js/time.js"></script>
@@ -55,8 +152,31 @@ video {
       </div>
         </div>
 <br>
-<center><h1>Entertopia ROMs</h1></center>
-<center><h3 id="splash">INFAMY</h3></center>
+<div class="country"></div>
+    <div class="left-section">
+      <h2>Recommended ROMs</h2>
+      <div class="slider">
+        <a href="/roms/Hajime no Ippo - The Fighting! (Japan).gba "><div class="slide active"><img src="/imgs/hajimenoippothefighting.jpeg" width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+        <a href="/roms/Pokemon - FireRed Version (USA, Europe) (Rev 1).gba"><div class="slide"><img src="/imgs/pokemonfirered.jpeg" width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+        <a href="/roms/Grand Theft Auto (USA).gba "><div class="slide"><img src="/imgs/gtaadvance.jpeg" width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+        <a href="/roms/One Piece (USA).gba "><div class="slide"><img src="/imgs/onepiece.jpeg" width="250px" height="200px" class="cake" style="border-radius: 30px;"></div></a>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+    <div class="middle-section">
+      <h2>Entertopia ROMs</h2>
+      <p><h5>Entertopia offers a vast collection of ROMs, allowing users to easily access and download their favorite classic games for various consoles.</h5><h5> With a user-friendly interface, you can find and enjoy a wide range of ROMs for nostalgic gaming experiences right from your device.</h5></p>
+    </div>
+    <div class="right-section">
+      <h2>Newest Release</h2>
+      <div class="new-game">
+        <a href="/roms/Mario Kart Super Circuit (U) [!].gba"><img src="/imgs/mariokart.jpeg" width="250px" height="150px" class="cake" style="border-radius: 30px;"></a>
+        <h3>Mario Kart Super Circuit</h3>
+      </div>
+    </div>
+  </div>
+  </div>
 <br>
 <center>
 <select id="categorySelect">
@@ -560,3 +680,36 @@ video {
       </script>
 </html>
 <script src="/js/realsearch.js"></script>
+
+<script>
+    // JavaScript goes here
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.style.display = 'block';
+          setTimeout(() => {
+            slide.classList.add('active');
+          }, 10);
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Initialize the first slide
+    showSlide(currentSlide);
+  </script>
