@@ -57,14 +57,67 @@ video {
 <br>
 
 <center><header><h1>1</h1></header></center>
-
+<center><a href=""><button id="gameback">Open Direct</button></a></center>
 <iframe src="https://entertopia-assets.vercel.app/1/index.html" id="iframe" name="iframe" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms" allowfullscreen></iframe>
 <br>
 <br>
 <center>
 <a onclick="toggleFullscreen()"><button id="gamebutton">Fullscreen</button></a>
 <a href="/general/arcade.html"><button id="gameback">Go back</button></a>
-<button onclick="refreshIframe()" id="gamerefresh">Refresh Iframe</button>
+<button onclick="refreshIframe()" id="gamerefresh">Reload</button>
+<button class="button" id="show-controls">Controls</button>
+
+<div id="controls-modal">
+    <div class="modal-content">
+        <h2>Controls</h2>
+        <p>
+            W - Move Up<br>
+            S - Move Down<br>
+            A - Move Left<br>
+            D - Move Right<br>
+            ↑ - Move Up<br>
+            ↓  - Move Down<br>
+            ← - Move Left<br>
+            → - Move Right<br>
+            Space - Jump<br>
+            Esc - Pause<br>
+            Shift - Sprint/Accelerate<br>
+            Left click - Shoot/Interact<br>
+            Right click - Aim<br>
+        </p>
+        <button class="close-button" id="close-modal">Close</button>
+    </div>
+</div>
+
+<script>
+    const showControlsButton = document.getElementById('show-controls');
+    const controlsModal = document.getElementById('controls-modal');
+    const closeModalButton = document.getElementById('close-modal');
+
+    showControlsButton.onclick = function() {
+        controlsModal.style.display = 'flex'; // Show modal
+        setTimeout(() => {
+            controlsModal.style.opacity = '1'; // Fade in
+            document.querySelector('.modal-content').style.transform = 'translateY(0)'; // Slide down
+        }, 10); // Short timeout to allow display change
+    };
+
+    closeModalButton.onclick = function() {
+        controlsModal.style.opacity = '0'; // Fade out
+        document.querySelector('.modal-content').style.transform = 'translateY(-30px)'; // Slide up
+        setTimeout(() => {
+            controlsModal.style.display = 'none'; // Hide modal after fade out
+        }, 300); // Match timeout with fade out duration
+    };
+
+    // Close modal when clicking outside the modal content
+    window.onclick = function(event) {
+        if (event.target === controlsModal) {
+            closeModalButton.onclick(); // Trigger close button action
+        }
+    };
+</script>
+
 </center>
 
 <br>

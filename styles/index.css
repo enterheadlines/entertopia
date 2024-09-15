@@ -217,7 +217,8 @@ hr{
 
     #gameback, 
 	#gamebutton,
-	#gamerefresh{
+	#gamerefresh,
+	#show-controls{
 		font-weight:900;
 		font-family: "Press Start 2P";
   padding: 10px 20px;
@@ -240,6 +241,13 @@ hr{
   background-color:  #5c5c5c;
 }
 
+#show-controls{
+	background-color: #3f3f3f;
+	color: #ffffff;
+  }
+  #show-controls:hover {
+	background-color: #5c5c5c;
+  }
 #gameback{
 	background-color: #3f3f3f;
 	color: #ffffff;
@@ -540,4 +548,40 @@ body {
 		width: 100%;
 		height: 100%;
 		z-index: -1;
+	}
+	#controls-modal {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		opacity: 0; /* Initially hidden */
+		transition: opacity 0.3s ease; /* Animation for fade in/out */
+	}
+	.modal-content {
+		background-color: #ffffff;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		max-width: 400px;
+		margin: auto;
+		transform: translateY(-30px); /* Start slightly above */
+		transition: transform 0.3s ease; /* Animation for slide in */
+	}
+	.close-button {
+		margin-top: 20px;
+		padding: 10px 15px;
+		background-color: #ff6347;
+		color: #ffffff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	.close-button:hover {
+		background-color: #ff4500;
 	}
