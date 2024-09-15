@@ -13,9 +13,7 @@ body {
     color: white;
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
-	opacity: 0;
-    transform: translateY(100%);
-    animation: slideIn 1s forwards;
+	animation: fadeInAnimation ease 2s;
 }
 #navshi {
 	backdrop-filter: blur(3px);
