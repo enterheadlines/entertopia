@@ -13,7 +13,9 @@ body {
     color: white;
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
-	animation: fadeInAnimation ease 1.5s;
+	opacity: 0;
+    transform: translateY(100%);
+    animation: slideIn 1s forwards;
 }
 #navshi {
 	backdrop-filter: blur(3px);
@@ -537,6 +539,7 @@ body {
 		transition: opacity 0.3s ease; /* Animation for fade in/out */
 	}
 	.modal-content {
+		font-family: Arial, sans-serif;
 		color: black;
 		background-color: #ffffff;
 		padding: 20px;
