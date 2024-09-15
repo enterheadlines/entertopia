@@ -78,18 +78,437 @@
 <br>
 <br>
 <center>
-<a href="/media/movies.html"><button id="enter">Movies</button></a>
-<a href="/media/drive.html"><button id="enter">Drive</button></a>
-<a href="/local-app/chatbot.html"><button id="enter">EnterAI</button></a>
-</center>
-<br>
-<center><h3>Options below are beta features</h3></center>
-<br>
-<center>
-<a href="/media/infstore.html"><button id="enter">Infstore</button></a>
-<a href="/media/entsearch.html"><button id="enter">Entsearch</button></a>
-<a href="/media/infamyos.html"><button id="enter">InfamyOS</button></a>
-<a href="/media/terminal.html"><button id="enter">Terminal</button></a>
+    <select id="categorySelect">
+        <option value="">All</option>
+        <option value="Horror">Horror</option>
+        <option value="Classic">Classic</option>
+        <option value="Kids Movies">Kids Movies</option>
+        <option value="Other">Other</option>
+    </select>
+    </center>
+    <!--data-category="Horror"-->
+    <!--data-category="Classic"-->
+    <!--data-category="Kids Movies"-->
+    <!--data-category="Other"-->
+  
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search Our Movie Library...">
+    <button onclick="searchGames()">Search</button>
+  </div>
+  <br>
+  <div class="row">
+  <div class="column" data-category=" ">
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Deadpool and Wolverine</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Borderlands</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Beetlejuice</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Inside out 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Inside out</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Despicable Me 4</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Bad Boys Ride or Die</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Long Legs</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Spirited Away</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The dark knight</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The Green Mile</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Fight Club</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Interstellar</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Spiderman Across the spiderverse</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">City Lights</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Avengers Endgame</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Avengers Infinty wars</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Coco</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Star wars</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Steven Universe The movie</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Scarface</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Scream</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The boss baby</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The angry birds movie</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Blue Beetle</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">One Piece Red</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Mouse Trap mickey</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">King Kong</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The 40 year old virgin</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">2012</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">A dogs purpose</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Forrest Gump</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Guardians of the galaxy</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category=" "></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The Wolverine</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Trolls</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">FNAF</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The super mario bros</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Wonka</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Migration</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Wish</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Monster House</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Alien Romulus</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Twisters</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Traps</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The Croods</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Oppenheimer</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The Lion King</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Horror"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Coraline</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Rocky 1</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Rocky 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Rocky 3</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Rocky 4</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Creed 1</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Creed 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Classic"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Creed 3</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Cars</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Cars 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The karate kid</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Cars 3</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Wall e</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Incredible 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Onwards</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Luca</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Elemental</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Lightyear</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Turning red</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Toy story </p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Toy story 2</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Toy story 3</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Toy story 4</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Ratatouille</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Finding Dory</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">The good dinosaurs</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Finding Nemo</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Up</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">A bugs life</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Soul</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Monsters inc</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Monsters University</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Moana</p>
+  </button> </a>
+  </div>
+  <div class="column" data-category="Kids Movies"></div>
+    <a href=" "><button id="button"><img src="/imgs/ " id="img">
+      <p id="hide">Moana 2</p>
+  </button> </a>
+  </div>
+  
+  </div>
+  <br>
+      <center>More coming soon...</center>
+     <br>
+     <center><button id="interstellarsucks" onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Go back?</button></center>
+  
 </center>
 <br>
 
@@ -216,9 +635,10 @@
     </body>
     <script>
         let splashtext = [
-       'Safety not assured',
-       'Videos are fire',
-       'You should check out the movies',
+      'imagine watching deadpool at school',
+      'not hosted by me btw',
+      'thank u vidlink for no ads',
+      'safety not assured',
      ]
      
      document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
@@ -230,3 +650,4 @@
       })
     </script>
 </html>
+<script src="/js/realsearch.js"></script>
