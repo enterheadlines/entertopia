@@ -1,4 +1,5 @@
 /*40% skidded*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
 	background-color: hsl(0, 0%, 14%);
@@ -9,7 +10,7 @@ body {
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-family: "Press Start 2P";
+    font-family: "Montserrat", sans-serif;
     color: white;
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
