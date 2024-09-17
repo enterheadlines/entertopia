@@ -1,5 +1,4 @@
 /*40% skidded*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
 	background-color: hsl(0, 0%, 14%);
@@ -10,7 +9,7 @@ body {
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Press Start 2P";
     color: white;
     margin: 0px;
 	box-shadow: rgb(255, 255, 255);
@@ -41,8 +40,8 @@ body {
 	margin: 200px;
 }
 a {
-	font-weight: 900;
-	font-family: "Montserrat", sans-serif;
+	font-weight:900;
+    font-family:"Press Start 2P";
 	text-decoration: none;
 	color: white;
 	transition: background-color 0.3s, color 0.3s;
@@ -50,21 +49,21 @@ a {
 }
 a:visited{
 	font-weight:900;
-	font-family: "Montserrat", sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
 
 }
 a:hover{
 	font-weight:900;
-	font-family: "Montserrat", sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: rgb(222, 211, 211);
 
 }
 a:active{
 	font-weight:900;
-	font-family: "Montserrat", sans-serif;
+    font-family: "Press Start 2P";
 	text-decoration: none;
 	color: white;
 
@@ -89,7 +88,7 @@ a::after{
 }
 #button {
 	font-weight:900;
-	font-family: "Montserrat", sans-serif;
+    font-family:"Press Start 2P";
 	padding:10px;
 	padding-bottom: 20px;
 	font-size: 18px;
@@ -135,7 +134,7 @@ a::after{
   font-size: xx-small;
 }
 #search{
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Press Start 2P';
 	color: white;
 	background-color: rgb(196, 31, 214);
 	height: 50px;
@@ -194,7 +193,7 @@ hr{
 	#gamerefresh,
 	#show-controls{
 		font-weight:900;
-		font-family: "Montserrat", sans-serif;
+		font-family: "Press Start 2P";
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -267,7 +266,7 @@ hr{
 	color: white;
 	border-radius: 20px;
 	border:none;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Press Start 2P";
 	padding: 15px 30px;
 	font-size: 18px;
   background-color: #ad47c6;
@@ -406,7 +405,7 @@ audio{
 }
 #enter{
 	font-weight:900;
-	font-family: "Montserrat", sans-serif;
+	  font-family:"Press Start 2P";
 	  padding:0px;
 	  font-size: 18px;
 	background-color:  rgb(58, 53, 58);
@@ -538,7 +537,7 @@ body {
 		transition: opacity 0.3s ease; /* Animation for fade in/out */
 	}
 	.modal-content {
-		font-family: "Montserrat", sans-serif;
+		font-family: Arial, sans-serif;
 		color: black;
 		background-color: #ffffff;
 		padding: 20px;
