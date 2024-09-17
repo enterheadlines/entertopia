@@ -41,8 +41,8 @@ body {
 	margin: 200px;
 }
 a {
-	font-weight:900;
-    font-family:"Press Start 2P";
+	font-weight: 900;
+	font-family: "Montserrat", sans-serif;
 	text-decoration: none;
 	color: white;
 	transition: background-color 0.3s, color 0.3s;
@@ -50,21 +50,21 @@ a {
 }
 a:visited{
 	font-weight:900;
-    font-family: "Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	text-decoration: none;
 	color: white;
 
 }
 a:hover{
 	font-weight:900;
-    font-family: "Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	text-decoration: none;
 	color: rgb(222, 211, 211);
 
 }
 a:active{
 	font-weight:900;
-    font-family: "Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	text-decoration: none;
 	color: white;
 
@@ -89,7 +89,7 @@ a::after{
 }
 #button {
 	font-weight:900;
-    font-family:"Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	padding:10px;
 	padding-bottom: 20px;
 	font-size: 18px;
@@ -135,7 +135,7 @@ a::after{
   font-size: xx-small;
 }
 #search{
-	font-family: 'Press Start 2P';
+	font-family: "Montserrat", sans-serif;
 	color: white;
 	background-color: rgb(196, 31, 214);
 	height: 50px;
@@ -194,7 +194,7 @@ hr{
 	#gamerefresh,
 	#show-controls{
 		font-weight:900;
-		font-family: "Press Start 2P";
+		font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -267,7 +267,7 @@ hr{
 	color: white;
 	border-radius: 20px;
 	border:none;
-	font-family: "Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	padding: 15px 30px;
 	font-size: 18px;
   background-color: #ad47c6;
@@ -406,7 +406,7 @@ audio{
 }
 #enter{
 	font-weight:900;
-	  font-family:"Press Start 2P";
+	font-family: "Montserrat", sans-serif;
 	  padding:0px;
 	  font-size: 18px;
 	background-color:  rgb(58, 53, 58);
@@ -538,7 +538,7 @@ body {
 		transition: opacity 0.3s ease; /* Animation for fade in/out */
 	}
 	.modal-content {
-		font-family: Arial, sans-serif;
+		font-family: "Montserrat", sans-serif;
 		color: black;
 		background-color: #ffffff;
 		padding: 20px;
