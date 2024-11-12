@@ -121,6 +121,18 @@
             text-decoration:none;
             color: white;
         }
+
+.custom-cursor {
+  position: absolute;
+  width: 20px; /* Medium size dot */
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.8); /* Glowing pink dot */
+  box-shadow: 0 0 15px rgb(255, 255, 255, 0.8), 0 0 30px rgb(255, 255, 255, 0.6); 
+  pointer-events: none; /* Prevent the cursor from interfering with interactions */
+  transition: transform 0.1s ease;
+}
+
     </style>
 </head>
 <body>
@@ -150,6 +162,7 @@
         </div>
         <div class="resize-handle" id="resizeHandle"></div> <!-- Resize Handle -->
     </div>
+ <div class="custom-cursor"></div>
 
     <script>
         // JavaScript Functionality
