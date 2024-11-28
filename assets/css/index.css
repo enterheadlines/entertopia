@@ -87,6 +87,7 @@ body{
     box-shadow: 0 0 10px rgb(11, 11, 11);
 }
 .maincontain{
+    padding: 30px;
     margin-left:5%;
     margin-right:5%;
     border-radius: 20px;
