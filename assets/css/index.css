@@ -1,10 +1,22 @@
 body{
-     
+    background: linear-gradient(-45deg, #4a1c6b, #4d1771, #c620cf7a, #661387);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: "Press Start 2P";
+    color: white;
+    font-family: "Press Start 2P";
+    margin: 10px;
 }
+
 .navbar {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
     border-radius: 20px;
     position: fixed;
     top: 0;
@@ -15,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    padding: 20px 20px;
     z-index: 9999;
 }
 .nav-texts{
