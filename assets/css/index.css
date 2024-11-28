@@ -83,7 +83,15 @@ body{
 
 .nav-button:hover {
     transform: scale(1.05);
+    background-color: rgba(194, 194, 194, 0); 
+    box-shadow: 0 0 10px rgb(11, 11, 11);
+}
+.maincontain{
+    margin-left:5%;
+    margin-right:5%;
+    border-radius: 20px;
     background-color: rgba(20, 20, 20, 0); 
     backdrop-filter: blur(10px) saturate(200%) brightness(70%);
     box-shadow: 0 0 10px rgb(11, 11, 11);
+    font-family: "Poppins", sans-serif;
 }
