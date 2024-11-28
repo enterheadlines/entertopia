@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
 body{
     background: linear-gradient(-45deg, #4a1c6b, #4d1771, #c620cf7a, #661387);
 	background-size: 400% 400%;
@@ -7,13 +10,16 @@ body{
     background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-family: "Press Start 2P";
+    font-family: "Poppins", sans-serif;
     color: white;
-    font-family: "Press Start 2P";
+    font-family: "Poppins", sans-serif;
     margin: 10px;
+    font-weight: 500;
 }
 
 .navbar {
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 0 10px rgb(11, 11, 11);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 20px;
@@ -77,5 +83,7 @@ body{
 
 .nav-button:hover {
     transform: scale(1.05);
-    background-color: #555;
+    background-color: rgba(20, 20, 20, 0); 
+    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
+    box-shadow: 0 0 10px rgb(11, 11, 11);
 }
