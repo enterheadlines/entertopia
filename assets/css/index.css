@@ -17,11 +17,13 @@ body{
     font-weight: 500;
 }
 .buttonrow {
+    text-align: center;
     display: flex;
   }
   
   /* Create three equal columns that sits next to each other */
   .buttoncolumn {
+    text-align: center;
     flex: 0%;
     padding: 5px;
     margin: 0px;
@@ -35,5 +37,11 @@ body{
     transition: all 0.5s ease;
     box-shadow: 0 0 10px rgba(235, 8, 247, 0.5);
     cursor: pointer;
-    
+  }
+  .text{
+    font-size: larger;
+    font-weight: 500;
+  }
+  .quote{
+    font-size: small;
   }
