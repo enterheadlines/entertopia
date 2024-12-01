@@ -17,7 +17,7 @@ body{
     font-weight: 500;
 }
 .buttonrow {
-    text-align: center;
+  text-align: center;
     display: flex;
   }
   
@@ -39,7 +39,9 @@ body{
     cursor: pointer;
   }
   .text{
-    font-size: 2cm;
+    text-shadow:1px 1px 10px #ffffff, 1px 1px 10px #ccc;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1cm;
     font-weight: 500;
   }
   .quote{
@@ -50,3 +52,33 @@ body{
     flex-direction: column;
     align-items: center;
  }
+ a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+
+ a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
