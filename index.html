@@ -42,65 +42,88 @@
 </script>
     </head>
     <body>
-<center>
-<h1 class="text">Entertopia</h1>
-<h2 class="quotes">Loading...</h2>
-</center>
-<div class="container">
-<div class="buttonrow">
-  <div class="buttoncolumn">
-    <a href="" title="Games">
-      <img src=" " class="buttonimg">
-    <button class="button">Games</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="Apps">
-      <img src=" " class="buttonimg">
-    <button class="button">Apps</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="Media">
-      <img src=" " class="buttonimg">
-    <button class="button">Media</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="AI">
-      <img src=" " class="buttonimg">
-    <button class="button">AI</button> 
-  </a>
-  </div>
-</div>
-<div class="buttonrow">
-  <div class="buttoncolumn">
-    <a href="" title="Hacks">
-      <img src=" " class="buttonimg">
-    <button class="button">Hacks</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="Chatroom">
-      <img src=" " class="buttonimg">
-    <button class="button">Chatroom</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="Store">
-      <img src=" " class="buttonimg">
-    <button class="button">Store</button> 
-  </a>
-  </div>
-  <div class="buttoncolumn">
-    <a href="" title="Extras">
-      <img src=" " class="buttonimg">
-    <button class="button">Extras</button> 
-  </a>
-  </div>
-</div>
-</div>
+
+      <script src="/assets/js/global.js"></script>
+      <script src="/assets/js/eruda.js"></script>
+      <script>eruda.init();</script>
+      <div id="particles-js"></div>
+              <nav>
+                  <a href="/assets/html/index.html" class="left-link" title="Starlight">Entertopia</a>
+                  <div class="nav-links">
+                      <a href="/assets/html/arcade.html" title="Arcade"><img src="/assets/images/navicons/arcade.png" id="nav-img">&nbsp;Games</a>
+                      <a href="/assets/html/utilities.html" title="Utilities"><img src="/assets/images/navicons/apps.png" id="nav-img">&nbsp;Apps</a>
+                      <a href="/assets/html/media.html" title="Media"><img src="/assets/images/navicons/movies.png" id="nav-img">&nbsp;Movies</a>
+                      <a href="/assets/html/ai.html" title="AI"><img src="/assets/images/navicons/ai.png" id="nav-img">&nbsp;Chatbot</a>
+                      <a href="/assets/html/search.html" title="Search"><img src="/assets/images/navicons/search.png" id="nav-img">&nbsp;Proxy</a>
+                      <a href="/assets/html/settings.html" title="Settings"><img src="/assets/images/navicons/settings.png" id="nav-img">&nbsp;Settings</a>
+                  </div>
+              </nav>
+              <div id="mainmenu">
+              <center><div class="text">Welcome to Entertopia</div></center>
+              <div id="splash">Loading...</div>
+              <br>
+              <center>
+                  <form id="uv-form">
+                    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+                    <input id="uv-address" type="text" placeholder="Search the web with Starlight" class="form__input"/>
+                  </form>
+                  <div class="desc left-margin">
+                    <p id="uv-error"></p>
+                    <pre id="uv-error-code"></pre>
+                  </div>
+                </center>
+                <br>
+                <center> 
+                 <a href="/assets/html/dashboard.html"><button class="button">Dashboard</button></a>&nbsp;&nbsp;&nbsp;
+                 <a href="/assets/html/premium.html"><button class="button">Premium</button></a>&nbsp;&nbsp;&nbsp;
+                 <a href="https://discord.gg/WSUy3dHFRh"><button class="button">Join Our Discord</button></a>&nbsp;&nbsp;&nbsp;
+                 <a id="openScriptButton"><button class="button">Cloak</button></a>&nbsp;
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                  <a href=" ">
+                  <div id="ads" style="display: inline-block;  padding: 40x; border-radius: 15px; background-color: #1f1f1f; width: 30%; padding-top: 25px; padding-bottom: 25px; box-shadow: 0px 12px 36px rgba(22, 22, 22, 0.5); /* Slightly increase shadow on lift */">
+          
+                  <p><b style="color: rgb(124, 124, 124);">Ads open for sale</b></p>
+                </div></a>
+                </center>
+                </div>
+      <script src="/assets/js/cloak.js"></script>
+      <script src="/assets/uv/uv/uv.bundle.js" defer></script>
+      <script src="/assets/uv/uv/uv.config.js" defer></script>
+      <script src="/assets/uv/register-sw.js" defer></script>
+      <script src="/assets/uv/search.js" defer></script>
+      <script src="/assets/uv/index.js" defer></script>
+      <script src="/assets/uv/error.js" defer></script>
+          </body>
+      </html>
+                      <script src="/general/js/settings.js"></script>
+                   <script>
+                    let splashtext = [
+      'copy of starlight',
+      'better version than starlight'
+      ];
+      
+      // Function to change text
+      function changeSplashText() {
+          document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)];
+      }
+      
+      // Initial call to set the text immediately
+      changeSplashText();
+      
+      // Change the text every 5 seconds (5000 milliseconds)
+      setInterval(changeSplashText, 5000);
+      
+                   </script>
     </body>
        </html>
+<<<<<<< HEAD
+       <script src="/assets/js/particles.js"></script>
+       <script src="/assets/js/particlescode.js"></script>
+=======
        <script src="/assets/js/particles.js"></script>
        
+>>>>>>> c620e9ee5f451fd95c99810ee22c90b0f415052a
